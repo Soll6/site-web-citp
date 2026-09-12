@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>CITP Gabon - Back-Office Administration</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7c97ef","surface":"#faf8ff","on-primary":"#ffffff","on-tertiary-fixed":"#001e2d","primary-container":"#002b7f","on-tertiary-fixed-variant":"#004c6b","inverse-on-surface":"#eef0ff","on-primary-fixed":"#00174c","inverse-surface":"#283044","on-tertiary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","outline-variant":"#c4c6d3","on-surface-variant":"#444651","on-surface":"#131b2e","primary-fixed-dim":"#b5c4ff","on-secondary-fixed":"#2c1600","tertiary":"#002131","outline":"#747683","primary-fixed":"#dbe1ff","tertiary-container":"#00374f","secondary":"#8a5100","secondary-fixed-dim":"#ffb86e","secondary-container":"#fc9910","on-error-container":"#93000a","error":"#ba1a1a","background":"#faf8ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#0ea6e3","on-error":"#ffffff","surface-tint":"#3d5aad","surface-variant":"#dae2fd","tertiary-fixed":"#c6e7ff","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","inverse-primary":"#b5c4ff","on-secondary-container":"#643900","tertiary-fixed-dim":"#81cfff","error-container":"#ffdad6","primary":"#001851","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-secondary-fixed-variant":"#693c00","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#224194","secondary-fixed":"#ffdcbd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"spacing-md":"1.5rem","gutter-desktop":"1.5rem","spacing-3xs":"0.25rem","spacing-2xs":"0.5rem","spacing-lg":"2rem","spacing-3xl":"6rem","spacing-xl":"3rem","gutter-mobile":"1rem","spacing-xs":"0.75rem","spacing-sm":"1rem","spacing-4xs":"0.125rem","container-max":"1280px","spacing-2xl":"4rem"},"fontFamily":{"label-md":["Inter"],"label-mono":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"16px","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-spacing-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-spacing-xs"><img alt="citp-logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL0dcbRRgY7SsdwPT7sYO-pdOf_JRWsY9Vou8xiXpMa26-hBwXVXIR4OjvVZRyhtogBqvEWb2e0U_qUE0EvxHJMlMQ-4bC-gUmtLkQLNfrSvNJWF1RkUgQMbCuqsOi5FlkYccQESfLaWTJWUrHwifDKCHWBE__Cc5ozVEZQFc6X4qjXcDbQ3ZFjE2ZIBQ80cBwC62EdvmeyUDciUkdXVsa-jbmny9LevKs5O1oA0vg8haN7CTEppTpPyu20pq04PQUgroTWqIhnT8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CITP Gabon</span><span class="font-label-mono text-label-mono text-secondary">ESPACE ÉDITION</span></div></div></div><div class="px-spacing-md py-spacing-xs bg-surface-container-low mx-spacing-xs mt-spacing-xs rounded-xl flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span><div class="flex flex-col"><span class="font-label-mono text-label-mono text-on-surface">Éditer comme dans Word</span><span class="font-body-sm text-body-sm text-on-surface-variant">Publier en 1 clic</span></div></div><nav class="flex flex-col gap-spacing-4xs px-spacing-xs mt-spacing-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Section Principale</span><a aria-current="page" class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl transition-colors bg-primary-container text-on-primary font-bold" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-title-md text-title-md">Tableau de bord</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mes-contenus-articles" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-title-md text-title-md">Mes Contenus &amp; Articles</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="fiches-chantiers-realisations" href="#"><span class="material-symbols-outlined text-[20px]">engineering</span><span class="font-title-md text-title-md">Fiches Chantiers &amp; Projets</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Médias &amp; Ressources</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mediatheque-terrain" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-title-md text-title-md">Médiathèque Terrain</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bannieres-alertes-info" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-md text-title-md">Bannières &amp; Alertes Info</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Suivi &amp; Interactions</span><a class="flex items-center justify-between px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="boite-de-reception" href="#"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-title-md text-title-md">Boîte de réception</span></div><span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono">3</span></a></nav></div><div class="flex flex-col gap-spacing-4xs px-spacing-xs pb-spacing-sm pt-spacing-xs border-t border-surface-container-high"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Assistance &amp; Paramètres</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="guide-videos-aide" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary-container">help_outline</span><span class="font-title-md text-title-md">Guide &amp; Tutoriels Vidéo</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="parametres-session" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Paramètres de session</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-title-md text-title-md">Déconnexion</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-spacing-md"><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-2xs bg-surface-container px-spacing-xs py-spacing-3xs rounded-xl"><span class="font-label-md text-label-md text-primary font-bold">Back-Office Édition</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-high text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-mono text-label-mono">Rôle : Éditeur (Brouillons &amp; Contenus)</span></div><div class="hidden xl:flex items-center gap-spacing-3xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[18px]">cloud_done</span><span>Sauvegardé automatiquement (Supabase)</span></div></div><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-xs py-spacing-3xs rounded-xl"><button class="px-spacing-2xs py-spacing-4xs rounded-lg bg-primary-container text-on-primary font-label-mono text-label-mono">FR</button><button class="px-spacing-2xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono relative flex items-center gap-1">EN <span class="w-1.5 h-1.5 rounded-full bg-secondary-container" title="Traductions partielles"></span></button></div><a class="flex items-center gap-spacing-3xs text-primary hover:text-primary-container font-label-md text-label-md bg-surface-container px-spacing-xs py-spacing-2xs rounded-xl transition-colors" href="#" target="_blank"><span class="material-symbols-outlined text-[18px]">open_in_new</span><span class="hidden lg:inline">Voir le site public</span></a><button class="relative p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-spacing-xs pl-spacing-xs border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Diane M.</span><span class="font-label-mono text-label-mono text-on-surface-variant leading-tight">Chargée de Com &amp; Dir.</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Script de sélection interactif & tabs -->
+<script>
+    function switchMessage(id) {
+      document.querySelectorAll('.inbox-card').forEach(el => {
+        el.classList.remove('bg-surface-container-low', 'border-l-4', 'border-secondary-container', 'shadow-sm');
+        el.classList.add('bg-surface-container-lowest');
+      });
+      const selected = document.getElementById('msg-card-' + id);
+      if (selected) {
+        selected.classList.remove('bg-surface-container-lowest');
+        selected.classList.add('bg-surface-container-low', 'shadow-sm');
+      }
+    }
+
+    function toggleInternalNote() {
+      const noteBox = document.getElementById('internal-note-box');
+      if (noteBox) {
+        noteBox.classList.toggle('hidden');
+      }
+    }
+  </script>
+<!-- Section En-tête & Métriques Opérationnelles -->
+<div class="px-spacing-md pt-spacing-md pb-spacing-sm flex flex-col gap-spacing-md bg-surface">
+<!-- Breadcrumb contextuel & Titre Page -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-sm">
+<div class="flex flex-col gap-spacing-4xs">
+<div class="flex items-center gap-spacing-2xs font-label-mono text-label-mono uppercase tracking-widest text-on-surface-variant">
+<span>Plateforme Citpgabon.com</span>
+<span>/</span>
+<span class="text-secondary font-bold">Guichet Unique Interactions</span>
+<span>/</span>
+<span class="text-primary font-bold">Sélection active</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Boîte de Réception &amp; Interactions Web
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Centralisation des demandes formulées par les citoyens, maîtres d'ouvrages, candidats et partenaires institutionnels depuis les formulaires officiels du site public.
+        </p>
+</div>
+<!-- Action Buttons Bar -->
+<div class="flex flex-wrap items-center gap-spacing-2xs self-start lg:self-center">
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all rounded-xl shadow-sm text-label-md font-label-md">
+<span class="material-symbols-outlined text-primary text-[18px]">download</span>
+<span>Exporter (Excel/CSV)</span>
+</button>
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all rounded-xl shadow-sm text-label-md font-label-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">done_all</span>
+<span>Marquer tout comme lu</span>
+</button>
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs bg-primary text-on-primary hover:bg-primary-container transition-all rounded-xl shadow-sm text-label-md font-label-md">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px] animate-spin">sync</span>
+<span>Actualiser (Realtime)</span>
+</button>
+</div>
+</div>
+<!-- Bannière Statistique BTP & Clé d'activité -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-spacing-sm">
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Flux du Mois</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">12 formulaires</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tous guichets web réunis</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">inbox</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex items-center justify-between relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex flex-col pl-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-secondary font-bold">Attention requise</span>
+<div class="flex items-baseline gap-spacing-2xs">
+<span class="font-headline-md text-headline-md text-primary font-bold">03 non lus</span>
+<span class="inline-flex w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Réponse institutionnelle &lt; 24h</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">mark_email_unread</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Dossiers &amp; CCTP</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">02 fichiers lourds</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CCTP Alénakiri &amp; CV CACES</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[24px]">attach_file</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Conformité RGPD / DGPDP</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">100% Intègre</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Loi 001/2011 République Gabonaise</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Barre d'outils et de filtrage multi-critères -->
+<div class="px-spacing-md py-spacing-xs bg-surface-container-low flex flex-col gap-spacing-xs">
+<!-- Onglets catégories de formulaires -->
+<div class="flex items-center gap-spacing-2xs overflow-x-auto pb-spacing-4xs">
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Tous les messages</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-surface-container-highest/20 font-label-mono text-label-mono">12</span>
+</button>
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm flex items-center gap-spacing-2xs transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Marchés Publics &amp; AO</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-fixed/50 text-secondary font-label-mono text-label-mono font-bold">4</span>
+</button>
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm flex items-center gap-spacing-2xs transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Candidatures &amp; RH</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-surface-container-high text-primary font-label-mono text-label-mono font-bold">5</span>
+</button>
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm flex items-center gap-spacing-2xs transition-colors">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span>Presse &amp; Médias</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-mono text-label-mono">1</span>
+</button>
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm flex items-center gap-spacing-2xs transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Signalements Chantiers</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-error-container text-on-error-container font-label-mono text-label-mono font-bold">2</span>
+</button>
+</div>
+<!-- Recherche et dropdowns de statut/période -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-spacing-xs">
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-spacing-xs top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-10 pr-spacing-sm rounded-xl bg-surface-container-lowest text-on-surface text-body-sm font-body-sm placeholder:text-on-surface-variant shadow-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="Rechercher par expéditeur, organisme, mot-clé, PK..." type="text"/>
+</div>
+<div class="flex items-center gap-spacing-xs w-full md:w-auto justify-between md:justify-end">
+<div class="flex items-center gap-spacing-3xs bg-surface-container-lowest px-spacing-sm py-spacing-3xs rounded-xl shadow-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Statut :</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>Tous statuts</option>
+<option selected="">Non traités (3)</option>
+<option>En cours de transfert</option>
+<option>Classés / Archivés</option>
+</select>
+</div>
+<div class="flex items-center gap-spacing-3xs bg-surface-container-lowest px-spacing-sm py-spacing-3xs rounded-xl shadow-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Période :</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>30 derniers jours</option>
+<option>7 derniers jours</option>
+<option>Dernières 24 heures</option>
+<option>Année 2025</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- DISPOSITION PRINCIPALE EN 2 VOLETS (SPLIT-VIEW HUB CRM BTP) -->
+<div class="px-spacing-md py-spacing-md flex flex-col lg:flex-row gap-spacing-md flex-1 items-start">
+<!-- VOLET GAUCHE : LISTE DES INTERACTIONS (Largeur ~40%) -->
+<div class="w-full lg:w-[42%] flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between px-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant font-bold">Flux des échanges entrants</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Trié par : Réception récente</span>
+</div>
+<!-- CARTE 1 : Sélectionnée activement (Non lu, Appel d'offres Alénakiri) -->
+<div class="inbox-card cursor-pointer bg-surface-container-low rounded-xl p-spacing-sm shadow-md transition-all relative flex flex-col gap-spacing-2xs hover:shadow-lg" id="msg-card-1" onclick="switchMessage(1)">
+<div class="flex items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" title="Message non lu"></span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-label-mono text-label-mono uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+              Appels d'Offres • Urgent
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-secondary font-bold">Aujourd'hui, 09:15</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold leading-snug">
+            Direction Générale des Travaux Publics (DGVR)
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            M. Jean-Bernard Nguema • Directeur des Infrastructures
+          </span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold line-clamp-1">
+          Demande de transmission du dossier technique complémentaire - Voiries Alénakiri PK12
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Dans le cadre de l'adjudication provisoire des travaux de confortement d'accotements et bitumage du tronçon PK12-Alénakiri, nous prions votre direction de nous faire parvenir les notes de calculs géotechniques...
+        </p>
+<div class="flex items-center justify-between pt-spacing-2xs border-t border-surface-container">
+<div class="flex items-center gap-spacing-3xs bg-surface-container-lowest px-spacing-2xs py-spacing-4xs rounded-lg text-primary text-body-sm font-label-md">
+<span class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+<span class="truncate max-w-[200px]">CCTP_Voiries_Alenakiri_Additif.pdf</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">4.8 Mo</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">chevron_right</span>
+</div>
+</div>
+<!-- CARTE 2 : Non lu (RH - Conducteur d'engins) -->
+<div class="inbox-card cursor-pointer bg-surface-container-lowest rounded-xl p-spacing-sm shadow-sm transition-all relative flex flex-col gap-spacing-2xs hover:bg-surface-container-low hover:shadow-md" id="msg-card-2" onclick="switchMessage(2)">
+<div class="flex items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary" title="Message non lu"></span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container-high text-primary font-label-mono text-label-mono uppercase font-bold">
+              Candidature RH
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Hier, 16:40</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-snug">
+            Marc Ondo
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Conducteur d'engins qualifié (CACES R482 Catégories C1 &amp; E)
+          </span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-medium line-clamp-1">
+          Candidature spontanée - Conducteur de pelles et compacteurs lourds
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Ayant exercé sur les terrassements de la Transgabonaise pendant 4 ans, je sollicite un poste sur vos bases opérationnelles d'Owendo ou de la Ngounié...
+        </p>
+<div class="flex items-center justify-between pt-spacing-2xs">
+<div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-2xs py-spacing-4xs rounded-lg text-primary text-body-sm font-label-md">
+<span class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+<span class="truncate max-w-[200px]">CV_Marc_Ondo_CACES.pdf</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">2.1 Mo</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+<!-- CARTE 3 : Non lu (Partenariat / RSE Bifoun) -->
+<div class="inbox-card cursor-pointer bg-surface-container-lowest rounded-xl p-spacing-sm shadow-sm transition-all relative flex flex-col gap-spacing-2xs hover:bg-surface-container-low hover:shadow-md" id="msg-card-3" onclick="switchMessage(3)">
+<div class="flex items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary" title="Message non lu"></span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container-highest text-on-surface font-label-mono text-label-mono uppercase font-bold">
+              Partenariat &amp; RSE
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">03 Mars 2025</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-snug">
+            Fondation Seydou Kane &amp; ONG Femme &amp; Forêt Gabon
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Mme Marie-Claire Obone • Coordinatrice Terrain
+          </span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-medium line-clamp-1">
+          Coordination de la dotation scolaire 2025 aux écoles riveraines de Bifoun
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Suite aux travaux de réfection du pont de Bifoun, nous souhaiterions planifier la cérémonie conjointe de remise des 500 kits scolaires aux élèves de la commune...
+        </p>
+<div class="flex items-center justify-between pt-spacing-2xs">
+<span class="font-label-mono text-label-mono text-secondary">À valider avec Dir. Communication</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+<!-- CARTE 4 : Lu / Traité (Forbes Afrique) -->
+<div class="inbox-card cursor-pointer bg-surface-container-lowest opacity-85 rounded-xl p-spacing-sm shadow-sm transition-all relative flex flex-col gap-spacing-2xs hover:bg-surface-container-low hover:opacity-100" id="msg-card-4" onclick="switchMessage(4)">
+<div class="flex items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">check_circle</span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-tertiary-fixed/60 text-on-tertiary-fixed-variant font-label-mono text-label-mono uppercase">
+              Relations Presse
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">28 Fév 2025</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-snug">
+            Forbes Afrique (Bureau Dakar / Libreville)
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Hamidou Sall • Grand Reporter Économie
+          </span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-normal line-clamp-1">
+          Interview de M. Seydou Kane — Validation du reportage photographique des enrobés
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Bonjour Diane, les planches de contact de la centrale d'enrobage d'Owendo sont prêtes pour le prochain numéro spécial infrastructures gabonaises...
+        </p>
+<div class="flex items-center justify-between pt-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono">Traité par Diane M.</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+<!-- CARTE 5 : Déjà lu / Transféré (Riverains Ntoum PK18) -->
+<div class="inbox-card cursor-pointer bg-surface-container-lowest opacity-85 rounded-xl p-spacing-sm shadow-sm transition-all relative flex flex-col gap-spacing-2xs hover:bg-surface-container-low hover:opacity-100" id="msg-card-5" onclick="switchMessage(5)">
+<div class="flex items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">forward</span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container-high text-on-surface font-label-mono text-label-mono uppercase">
+              Signalement Chantier
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">24 Fév 2025</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-snug">
+            Collectif des Riverains PK18 Ntoum
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Paul Mve • Porte-parole
+          </span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-normal line-clamp-1">
+          Signalement poussières et demande d'arrosage renforcé de la piste provisoire
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Avec la saison sèche qui débute, le passage régulier des dumpers 8x4 génère un nuage de latérite près de l'école communale. Nous sollicitons le passage d'une citerne arroseuse...
+        </p>
+<div class="flex items-center justify-between pt-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono">Transféré Chef Chantier PK18</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- VOLET DROIT : DÉTAIL DU MESSAGE SÉLECTIONNÉ & ACTIONS DE RELAIS (Largeur ~58%) -->
+<div class="w-full lg:w-[58%] bg-surface-container-lowest rounded-xl shadow-md p-spacing-md flex flex-col gap-spacing-md">
+<!-- Barre d'état interne & actions primaires -->
+<div class="flex flex-wrap items-center justify-between gap-spacing-xs pb-spacing-xs border-b border-surface-container">
+<div class="flex items-center gap-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-label-mono text-label-mono uppercase font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+            Marché Public Prioritaire #MP-2025-014
+          </span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-on-surface-variant font-label-mono text-label-mono">
+            Réf: DGVR-DIR/25/089
+          </span>
+</div>
+<div class="flex items-center gap-spacing-2xs">
+<button class="p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors" title="Imprimer la fiche de contact">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+<button class="p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors" title="Archiver ce dossier">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+</button>
+<button class="flex items-center gap-spacing-3xs px-spacing-sm py-spacing-3xs rounded-xl bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-all" title="Marquer comme traité">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span>Marquer comme traité</span>
+</button>
+</div>
+</div>
+<!-- Grand Intitulé Objet -->
+<div class="flex flex-col gap-spacing-3xs">
+<h2 class="font-headline-md text-headline-md text-primary font-bold leading-tight">
+          Demande de transmission du dossier technique complémentaire — Réhabilitation des Voiries d'Alénakiri (PK12)
+        </h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Reçu le 15 Février 2025 à 09:15 (Heure locale Libreville UTC+1) via le formulaire officiel « Marchés &amp; Consultations ».
+        </span>
+</div>
+<!-- Fiche Identité Expéditeur (Métadonnées Haute Clarté) -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-spacing-sm">
+<div class="flex items-center gap-spacing-sm">
+<div class="w-14 h-14 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+            DG
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-2xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">M. Jean-Bernard Nguema</span>
+<span class="material-symbols-outlined text-primary text-[18px]" title="Contact vérifié République Gabonaise">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">
+              Directeur Général des Travaux Publics (DGVR)
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Ministère des Travaux Publics, de l'Équipement et des Infrastructures
+            </span>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-3xs text-left md:text-right border-t md:border-t-0 pt-spacing-2xs md:pt-0 border-surface-container">
+<a class="flex items-center md:justify-end gap-spacing-3xs font-label-md text-label-md text-primary hover:underline" href="mailto:jb.nguema@travaux-publics.gouv.ga">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>jb.nguema@travaux-publics.gouv.ga</span>
+</a>
+<span class="flex items-center md:justify-end gap-spacing-3xs font-label-mono text-label-mono text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>+241 01 76 12 34 / +241 07 45 88 00</span>
+</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">IP : 197.234.221.14 (Libreville Centre)</span>
+</div>
+</div>
+<!-- Corps du Message Officiel -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-lowest border border-surface-container flex flex-col gap-spacing-sm text-on-surface font-body-md text-body-md leading-relaxed">
+<p class="font-semibold text-primary">
+          À l'attention de la Direction Générale et de la Direction Technique de CITP Gabon,
+        </p>
+<p>
+          Monsieur le Directeur Général, Madame la Chargée de Communication,
+        </p>
+<p>
+          Dans le cadre de l'examen de conformité relatif à l'appel d'offres n° <strong>014/DGVR/MTP/2025</strong> portant sur le bitumage et l'assainissement lourd de la voirie d'accès à la zone industrielle d'Alénakiri (embranchement PK12), la commission technique ministérielle a bien pris acte de votre offre principale.
+        </p>
+<p>
+          Afin de finaliser les attributions et procéder à la signature de l'ordre de service (OS), nous vous demandons de nous faire parvenir sous 72 heures :
+        </p>
+<ul class="list-disc pl-spacing-md flex flex-col gap-spacing-4xs">
+<li>Le cahier des clauses techniques particulières (CCTP) annoté selon nos remarques du bordereau joint.</li>
+<li>Le planning prévisionnel d'engagement des niveleuses Caterpillar et de la centrale à béton d'Owendo.</li>
+<li>L'attestation de capacité financière actualisée auprès de votre établissement bancaire partenaire.</li>
+</ul>
+<p>
+          Nous restons à votre entière disposition pour toute séance de cadrage technique préalable dans les locaux du Ministère à Libreville.
+        </p>
+<div class="pt-spacing-2xs flex flex-col">
+<span class="font-bold text-on-surface">Jean-Bernard NGUEMA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Directeur des Infrastructures Routières &amp; des Ouvrages d'Art</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">République Gabonaise — Travail, Justice, Progrès</span>
+</div>
+</div>
+<!-- Pièce Jointe Téléchargeable -->
+<div class="flex flex-col gap-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant font-bold">
+          Pièce jointe officielle (1 fichier sécurisé)
+        </span>
+<div class="p-spacing-sm rounded-xl bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-error shadow-sm">
+<span class="material-symbols-outlined text-[28px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">CCTP_Voiries_Alenakiri_Additif_DGVR.pdf</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Document PDF technique • 4.8 Mo • Signé électroniquement</span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-2xs">
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Aperçu</span>
+</button>
+<button class="px-spacing-sm py-spacing-2xs rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Télécharger</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Actions de relais collaboratif en 1 clic (Spécial Communication & Direction) -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-low flex flex-col gap-spacing-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+<span class="font-title-md text-title-md text-primary font-bold">
+              Transférer en 1 clic sans quitter le back-office
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Notification e-mail + Slack immédiate</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-spacing-2xs">
+<button class="p-spacing-xs rounded-xl bg-primary hover:bg-primary-container text-on-primary transition-all text-left flex flex-col gap-spacing-4xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">forward</span>
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-primary-fixed">Prioritaire</span>
+</div>
+<span class="font-label-md text-label-md font-bold">Directeur Général</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">M. Seydou Kane</span>
+</button>
+<button class="p-spacing-xs rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface transition-all text-left flex flex-col gap-spacing-4xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px] text-primary">engineering</span>
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Bureau d'études</span>
+</div>
+<span class="font-label-md text-label-md font-bold">Direction Technique</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ingénierie &amp; Devis</span>
+</button>
+<button class="p-spacing-xs rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface transition-all text-left flex flex-col gap-spacing-4xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px] text-tertiary">badge</span>
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Ressources Humaines</span>
+</div>
+<span class="font-label-md text-label-md font-bold">Pôle RH &amp; Recrutement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Affectations chantiers</span>
+</button>
+</div>
+<!-- Bouton & encart Note interne -->
+<div class="flex flex-col gap-spacing-2xs pt-spacing-2xs">
+<button class="self-start flex items-center gap-spacing-3xs font-label-md text-label-md text-secondary hover:underline" onclick="toggleInternalNote()">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>+ Rédiger une note interne confidentielle (Visible uniquement équipe CITP)</span>
+</button>
+<div class="flex flex-col gap-spacing-2xs bg-surface-container-lowest p-spacing-xs rounded-xl border border-secondary/20" id="internal-note-box">
+<label class="font-label-mono text-label-mono text-on-surface font-bold uppercase">
+              Note de Diane M. (Chargée de Com &amp; Dir.) :
+            </label>
+<textarea class="w-full p-spacing-xs rounded-lg bg-surface text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary resize-none" placeholder="Ex: J'ai prévenu le DG par téléphone ce matin. M. Jean-Bernard attend les plannings avant jeudi midi..." rows="3">Note préliminaire : Transmis pour avis technique immédiat aux ingénieurs voiries d'Alénakiri. Le dossier original est classé sous la réf #2025-ALENAKIRI-V1.</textarea>
+<div class="flex justify-end gap-spacing-2xs">
+<button class="px-spacing-sm py-spacing-3xs rounded-lg bg-secondary text-on-secondary font-label-md text-label-md">
+                Enregistrer la note interne
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Rassurance, Traçabilité & Protection des Données -->
+<div class="p-spacing-xs rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-spacing-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Données hébergées en environnement certifié Gabon Data Center.</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">
+          Horodatage blockchain : 2025-02-15T08:15:22Z
+        </span>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high py-spacing-xs px-spacing-md text-on-surface-variant text-body-sm font-body-sm flex flex-wrap items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schema</span><span class="font-label-md text-label-md text-on-surface">Workflow institutionnel :</span><span class="font-body-sm text-body-sm text-on-surface-variant">Brouillon ➔ En relecture ➔ Publication officielle par un Validateur</span></div><div class="flex items-center gap-spacing-md text-body-sm font-body-sm"><span>Besoin d'aide ? Tél : <strong>+241 01 76 00 00</strong></span><span>Support DSI CITP Gabon • v2.4</span></div></footer></div></body></html>

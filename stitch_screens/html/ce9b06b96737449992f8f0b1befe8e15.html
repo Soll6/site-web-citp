@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>CITP Gabon - Back-Office Administration</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7c97ef","surface":"#faf8ff","on-primary":"#ffffff","on-tertiary-fixed":"#001e2d","primary-container":"#002b7f","on-tertiary-fixed-variant":"#004c6b","inverse-on-surface":"#eef0ff","on-primary-fixed":"#00174c","inverse-surface":"#283044","on-tertiary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","outline-variant":"#c4c6d3","on-surface-variant":"#444651","on-surface":"#131b2e","primary-fixed-dim":"#b5c4ff","on-secondary-fixed":"#2c1600","tertiary":"#002131","outline":"#747683","primary-fixed":"#dbe1ff","tertiary-container":"#00374f","secondary":"#8a5100","secondary-fixed-dim":"#ffb86e","secondary-container":"#fc9910","on-error-container":"#93000a","error":"#ba1a1a","background":"#faf8ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#0ea6e3","on-error":"#ffffff","surface-tint":"#3d5aad","surface-variant":"#dae2fd","tertiary-fixed":"#c6e7ff","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","inverse-primary":"#b5c4ff","on-secondary-container":"#643900","tertiary-fixed-dim":"#81cfff","error-container":"#ffdad6","primary":"#001851","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-secondary-fixed-variant":"#693c00","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#224194","secondary-fixed":"#ffdcbd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"spacing-md":"1.5rem","gutter-desktop":"1.5rem","spacing-3xs":"0.25rem","spacing-2xs":"0.5rem","spacing-lg":"2rem","spacing-3xl":"6rem","spacing-xl":"3rem","gutter-mobile":"1rem","spacing-xs":"0.75rem","spacing-sm":"1rem","spacing-4xs":"0.125rem","container-max":"1280px","spacing-2xl":"4rem"},"fontFamily":{"label-md":["Inter"],"label-mono":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"16px","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-spacing-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-spacing-xs"><img alt="citp-logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL0dcbRRgY7SsdwPT7sYO-pdOf_JRWsY9Vou8xiXpMa26-hBwXVXIR4OjvVZRyhtogBqvEWb2e0U_qUE0EvxHJMlMQ-4bC-gUmtLkQLNfrSvNJWF1RkUgQMbCuqsOi5FlkYccQESfLaWTJWUrHwifDKCHWBE__Cc5ozVEZQFc6X4qjXcDbQ3ZFjE2ZIBQ80cBwC62EdvmeyUDciUkdXVsa-jbmny9LevKs5O1oA0vg8haN7CTEppTpPyu20pq04PQUgroTWqIhnT8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CITP Gabon</span><span class="font-label-mono text-label-mono text-secondary">ESPACE ÉDITION</span></div></div></div><div class="px-spacing-md py-spacing-xs bg-surface-container-low mx-spacing-xs mt-spacing-xs rounded-xl flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span><div class="flex flex-col"><span class="font-label-mono text-label-mono text-on-surface">Éditer comme dans Word</span><span class="font-body-sm text-body-sm text-on-surface-variant">Publier en 1 clic</span></div></div><nav class="flex flex-col gap-spacing-4xs px-spacing-xs mt-spacing-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Section Principale</span><a aria-current="page" class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl transition-colors bg-primary-container text-on-primary font-bold" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-title-md text-title-md">Tableau de bord</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mes-contenus-articles" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-title-md text-title-md">Mes Contenus &amp; Articles</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="fiches-chantiers-realisations" href="#"><span class="material-symbols-outlined text-[20px]">engineering</span><span class="font-title-md text-title-md">Fiches Chantiers &amp; Projets</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Médias &amp; Ressources</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mediatheque-terrain" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-title-md text-title-md">Médiathèque Terrain</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bannieres-alertes-info" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-md text-title-md">Bannières &amp; Alertes Info</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Suivi &amp; Interactions</span><a class="flex items-center justify-between px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="boite-de-reception" href="#"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-title-md text-title-md">Boîte de réception</span></div><span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono">3</span></a></nav></div><div class="flex flex-col gap-spacing-4xs px-spacing-xs pb-spacing-sm pt-spacing-xs border-t border-surface-container-high"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Assistance &amp; Paramètres</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="guide-videos-aide" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary-container">help_outline</span><span class="font-title-md text-title-md">Guide &amp; Tutoriels Vidéo</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="parametres-session" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Paramètres de session</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-title-md text-title-md">Déconnexion</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-spacing-md"><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-2xs bg-surface-container px-spacing-xs py-spacing-3xs rounded-xl"><span class="font-label-md text-label-md text-primary font-bold">Back-Office Édition</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-high text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-mono text-label-mono">Rôle : Éditeur (Brouillons &amp; Contenus)</span></div><div class="hidden xl:flex items-center gap-spacing-3xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[18px]">cloud_done</span><span>Sauvegardé automatiquement (Supabase)</span></div></div><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-xs py-spacing-3xs rounded-xl"><button class="px-spacing-2xs py-spacing-4xs rounded-lg bg-primary-container text-on-primary font-label-mono text-label-mono">FR</button><button class="px-spacing-2xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono relative flex items-center gap-1">EN <span class="w-1.5 h-1.5 rounded-full bg-secondary-container" title="Traductions partielles"></span></button></div><a class="flex items-center gap-spacing-3xs text-primary hover:text-primary-container font-label-md text-label-md bg-surface-container px-spacing-xs py-spacing-2xs rounded-xl transition-colors" href="#" target="_blank"><span class="material-symbols-outlined text-[18px]">open_in_new</span><span class="hidden lg:inline">Voir le site public</span></a><button class="relative p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-spacing-xs pl-spacing-xs border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Diane M.</span><span class="font-label-mono text-label-mono text-on-surface-variant leading-tight">Chargée de Com &amp; Dir.</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- BANDEAU HAUT INSTITUTIONNEL & CONTRÔLE SYSTÈME -->
+<section class="bg-surface-container-lowest shadow-sm px-spacing-md py-spacing-md flex flex-col gap-spacing-md">
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-spacing-md">
+<!-- Logo + Titrage Institutionnel -->
+<div class="flex items-center gap-spacing-md">
+<div class="relative p-spacing-2xs bg-surface-container rounded-xl flex items-center justify-center shadow-sm">
+<img alt="Logo Officiel CITP Gabon" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaOPwvGanDTKKsT8Rtl4dUq6185xseohlOVOlidf185tyrAMerQ31N-DAnLXvO0AtHW0OQhd_CWjkBjcbeO2_LCb-yIlbsoix5MuA6xz7t4FME1cWDE0H54kKgjMEIuDFGROnRwNYnSVXhMNOwmt4W4Mis4IKjKpHm4w3yUeWqId4woKgHXxKx3kECOteS4xx_C7Q4oyNJ37rdYsT53cZvIEoYbJFVb-wlr_n6Hd0k-bxGXxmcoDwBKdmkcQFIgKOGhHI"/>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-secondary-container rounded-full ring-4 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-2xs flex-wrap">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">Supervision &amp; Gouvernance IT</span>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-primary text-on-primary font-label-mono text-label-mono uppercase tracking-wider">Loi 001/2011 DGPDP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-spacing-2xs mt-spacing-4xs">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+            Infrastructure Cloud CITP Gabon • Direction des Systèmes d'Information • Nœud Libreville
+          </p>
+</div>
+</div>
+<!-- Métriques de haute disponibilité en temps réel -->
+<div class="flex items-center gap-spacing-xs flex-wrap">
+<div class="flex items-center gap-spacing-2xs px-spacing-xs py-spacing-2xs bg-surface-container-low rounded-xl">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface uppercase">Supabase Cluster LBV</span>
+<span class="font-label-md text-label-md text-primary font-bold">99.98% Uptime • 18ms</span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-2xs px-spacing-xs py-spacing-2xs bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">public</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface uppercase">Edge CDN Cloudflare</span>
+<span class="font-label-md text-label-md text-primary font-bold">42 Nœuds Synchro</span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-2xs px-spacing-xs py-spacing-2xs bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface uppercase">Conformité DGPDP</span>
+<span class="font-label-md text-label-md text-emerald-700 font-bold">Audit Conforme</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Barre d'actions d'urgence & Profil Opérateur -->
+<div class="bg-surface-container p-spacing-xs rounded-xl flex flex-col md:flex-row items-stretch md:items-center justify-between gap-spacing-sm">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">M</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-3xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Marcelle M.</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono">DSI &amp; SecOps</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Session vérifiée FIDO2 / YubiKey • IP: 197.214.68.10 (Libreville ANINF)</span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-2xs flex-wrap">
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm" id="btnBackupNow">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Snapshot Manuel Instantané</span>
+</button>
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-title-md text-title-md transition-all shadow-sm" id="btnPurgeCache">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Purger CDN Edge</span>
+</button>
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface font-title-md text-title-md transition-all">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+<span>Exporter Audit Logs</span>
+</button>
+</div>
+</div>
+</section>
+<!-- BANDEAU DES 4 KPIs INFRASTRUCTURE -->
+<section class="px-spacing-md py-spacing-md">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-spacing-md">
+<!-- Carte 1: Utilisateurs & Matrice des Permissions -->
+<div class="bg-surface-container-lowest p-spacing-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Accès Institutionnels</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-spacing-4xs">14</span>
+<span class="font-title-md text-title-md text-on-surface">Comptes d'Édition Actifs</span>
+</div>
+<div class="p-spacing-2xs bg-surface-container rounded-xl text-primary">
+<span class="material-symbols-outlined text-[24px]">manage_accounts</span>
+</div>
+</div>
+<div class="mt-spacing-sm pt-spacing-xs bg-surface-container-low -mx-spacing-md -mb-spacing-md px-spacing-md py-spacing-xs flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-spacing-3xs">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> 0 compte bloqué
+          </span>
+<span class="font-label-mono text-label-mono text-primary font-bold">3 Admins • 2 Valid. • 9 Éditeurs</span>
+</div>
+</div>
+<!-- Carte 2: Base PostgreSQL Supabase Gabon -->
+<div class="bg-surface-container-lowest p-spacing-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Volume Données PostgreSQL</span>
+<div class="flex items-baseline gap-spacing-2xs mt-spacing-4xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">64.2</span>
+<span class="font-title-md text-title-md text-on-surface-variant">/ 500 Go</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Chantiers &amp; Médias HD</span>
+</div>
+<div class="p-spacing-2xs bg-surface-container rounded-xl text-secondary">
+<span class="material-symbols-outlined text-[24px]">database</span>
+</div>
+</div>
+<div class="mt-spacing-sm pt-spacing-xs bg-surface-container-low -mx-spacing-md -mb-spacing-md px-spacing-md py-spacing-xs flex flex-col gap-spacing-3xs">
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 12.8%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<span>Rétention 90j continue</span>
+<span class="font-label-mono text-label-mono text-on-surface font-bold">12.8% alloué</span>
+</div>
+</div>
+</div>
+<!-- Carte 3: Trafic & Requêtes CDN Edge -->
+<div class="bg-surface-container-lowest p-spacing-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-full h-1 bg-tertiary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Trafic Portail Citoyen</span>
+<div class="flex items-baseline gap-spacing-2xs mt-spacing-4xs">
+<span class="font-headline-lg text-headline-lg text-primary">482k</span>
+<span class="font-label-md text-label-md text-emerald-700 font-bold bg-emerald-100 px-spacing-3xs rounded">+18%</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Pic Annonce Alénakiri</span>
+</div>
+<div class="p-spacing-2xs bg-surface-container rounded-xl text-tertiary">
+<span class="material-symbols-outlined text-[24px]">query_stats</span>
+</div>
+</div>
+<div class="mt-spacing-sm pt-spacing-xs bg-surface-container-low -mx-spacing-md -mb-spacing-md px-spacing-md py-spacing-xs flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span> Latence 28 ms
+          </span>
+<span class="font-label-mono text-label-mono text-on-surface font-bold">96.4% Cache Hit</span>
+</div>
+</div>
+<!-- Carte 4: Hygiène Sécurité 2FA & FIDO2 -->
+<div class="bg-surface-container-lowest p-spacing-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-full h-1 bg-emerald-600"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Protection Périmétrique</span>
+<span class="font-headline-lg text-headline-lg text-emerald-700 mt-spacing-4xs">100%</span>
+<span class="font-title-md text-title-md text-on-surface">2FA / Clé Matérielle</span>
+</div>
+<div class="p-spacing-2xs bg-emerald-50 rounded-xl text-emerald-700">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+</div>
+<div class="mt-spacing-sm pt-spacing-xs bg-surface-container-low -mx-spacing-md -mb-spacing-md px-spacing-md py-spacing-xs flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-spacing-3xs text-emerald-700 font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Politique stricte
+          </span>
+<span class="font-label-mono text-label-mono text-on-surface">Déconnexion auto: 45 min</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CORPS PRINCIPAL : DEUX GRANDES COLONNES (GRILLE BENTO TECHNIQUE) -->
+<section class="px-spacing-md pb-spacing-xl grid grid-cols-1 xl:grid-cols-12 gap-spacing-md">
+<!-- COLONNE GAUCHE (8 COLONNES) : GOUVERNANCE DES COMPTES & RESTAURATION TECHNIQUE -->
+<div class="xl:col-span-8 flex flex-col gap-spacing-md">
+<!-- MODULE 1 : MATRICE DES ACCÈS & RÔLES CITP -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="p-spacing-md bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-spacing-sm">
+<div class="flex items-center gap-spacing-xs">
+<div class="p-spacing-2xs bg-primary text-on-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-primary">Matrice des Permissions &amp; Rôles Institutionnels</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contrôle granulaire conforme aux délégations de signature et à la Loi 001/2011</span>
+</div>
+</div>
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs bg-primary hover:bg-primary-container text-on-primary rounded-lg font-title-md text-title-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Inviter un Collaborateur</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-mono text-label-mono uppercase tracking-wider">
+<th class="py-spacing-xs px-spacing-md">Utilisateur &amp; Fonction</th>
+<th class="py-spacing-xs px-spacing-sm">Rôle Système</th>
+<th class="py-spacing-xs px-spacing-sm">Périmètre / Privilèges</th>
+<th class="py-spacing-xs px-spacing-sm">Sécurité 2FA</th>
+<th class="py-spacing-xs px-spacing-md text-right">Actions Opérateur</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm">
+<!-- M. Seydou Kane -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-spacing-sm px-spacing-md">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-[13px]">SK</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">M. Seydou Kane</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Président &amp; Dir. Publication</span>
+</div>
+</div>
+</td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs px-spacing-2xs py-spacing-4xs rounded bg-primary text-on-primary font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                    Validateur Suprême
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">Publication directe officielle</span>, arrêtés de chantiers, avis citoyens
+                </td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs text-emerald-700 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px]">lock</span> FIDO2 Hardware
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-md text-right">
+<div class="flex items-center justify-end gap-spacing-2xs">
+<button class="p-spacing-3xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-primary" title="Modifier le périmètre">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-spacing-3xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-secondary" title="Journal des signatures">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Diane Mayila -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-spacing-sm px-spacing-md">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-[13px]">DM</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Diane Mayila</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Chargée de Com &amp; Direction</span>
+</div>
+</div>
+</td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs px-spacing-2xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono font-bold">
+                    Éditeur en Chef
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm text-on-surface-variant">
+                  Rédaction d'articles, téléversement photos HD, soumission pour relecture
+                </td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs text-emerald-700 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px]">lock</span> TOTP Authenticator
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-md text-right">
+<div class="flex items-center justify-end gap-spacing-2xs">
+<button class="p-spacing-3xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-primary" title="Modifier">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-spacing-3xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-secondary" title="Réinitialiser 2FA">
+<span class="material-symbols-outlined text-[18px]">rotate_left</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Serge N. -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-spacing-sm px-spacing-md">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-[13px]">SN</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Serge N.</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Ingénieur Travaux &amp; QHSE</span>
+</div>
+</div>
+</td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs px-spacing-2xs py-spacing-4xs rounded bg-secondary-fixed text-on-secondary-fixed font-label-mono text-label-mono">
+                    Éditeur Terrain (Mobile)
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm text-on-surface-variant">
+                  Fiches chantiers Alénakiri &amp; PK12, téléversement rapports d'avancement
+                </td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs text-emerald-700 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px]">lock</span> OTP SMS &amp; App
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-md text-right">
+<div class="flex items-center justify-end gap-spacing-2xs">
+<button class="p-spacing-3xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-spacing-3xs hover:bg-error-container rounded text-error" title="Suspendre temporairement">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Marcelle M. -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-spacing-sm px-spacing-md">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[13px]">MM</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Marcelle M. (Vous)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Responsable DSI &amp; Sécurité IT</span>
+</div>
+</div>
+</td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs px-spacing-2xs py-spacing-4xs rounded bg-surface-container-highest text-primary font-label-mono text-label-mono font-bold">
+                    Super-Administrateur
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm text-on-surface-variant">
+                  Accès Total • Clés API, Sauvegardes Supabase, Logs d'Audit DGPDP
+                </td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs text-emerald-700 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px]">lock</span> YubiKey FIDO2
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-md text-right">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono">Profil Maître</span>
+</td>
+</tr>
+<!-- Observateur Institutionnel -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-spacing-sm px-spacing-md">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-[13px]">JN</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Jean-Bernard N.</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">DGVR / Ministère TP Gabon</span>
+</div>
+</div>
+</td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs px-spacing-2xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono">
+                    Auditeur Institutionnel
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm text-on-surface-variant">
+                  Lecture seule stricte • Téléchargement des CCTP &amp; plannings certifiés
+                </td>
+<td class="py-spacing-sm px-spacing-sm">
+<span class="inline-flex items-center gap-spacing-4xs text-emerald-700 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px]">lock</span> OTP Mobile
+                  </span>
+</td>
+<td class="py-spacing-sm px-spacing-md text-right">
+<button class="p-spacing-3xs hover:bg-surface-container-high rounded text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- MODULE 2 : SAUVEGARDES, IMMUABILITÉ & RESTAURATION (SUPABASE CLOUD GABON) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-spacing-md flex flex-col gap-spacing-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-spacing-sm">
+<div class="flex items-center gap-spacing-xs">
+<div class="p-spacing-2xs bg-secondary-container text-on-secondary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-primary">Sauvegardes Immuables &amp; Restauration (PITR)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stockage chiffré AES-256 répliqué sur 2 datacenters certifiés Gabon</span>
+</div>
+</div>
+<button class="flex items-center gap-spacing-2xs px-spacing-sm py-spacing-2xs bg-surface-container-high hover:bg-surface-dim text-primary rounded-lg font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Export Archive .SQL Cryptée</span>
+</button>
+</div>
+<!-- Snapshots / Points de Restauration Disponibles -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-spacing-sm">
+<!-- Snapshot Récent 1 -->
+<div class="p-spacing-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-spacing-sm hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-emerald-600 text-[28px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Snapshot Quotidien Automatisé</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Aujourd'hui à 03:00 UTC+1 • 1.24 Go</span>
+</div>
+</div>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-emerald-100 text-emerald-800 font-label-mono text-label-mono font-bold">SHA-256 OK</span>
+</div>
+<div class="flex items-center justify-between pt-spacing-2xs text-body-sm text-body-sm text-on-surface-variant">
+<span>Tables Chantiers, Médias &amp; Comptes</span>
+<button class="flex items-center gap-spacing-4xs text-primary hover:underline font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">restore</span>
+<span>Restaurer (Rollback)</span>
+</button>
+</div>
+</div>
+<!-- Snapshot Récent 2 -->
+<div class="p-spacing-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-spacing-sm hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">deployed_code_history</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Pré-Déploiement Alénakiri Phase 2</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Hier à 17:42 UTC+1 • 1.18 Go</span>
+</div>
+</div>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono font-bold">MANUEL</span>
+</div>
+<div class="flex items-center justify-between pt-spacing-2xs text-body-sm text-body-sm text-on-surface-variant">
+<span>Point de contrôle avant publication de masse</span>
+<button class="flex items-center gap-spacing-4xs text-primary hover:underline font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">restore</span>
+<span>Restaurer (Rollback)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Alerte Restauration Rapide & Sécurité -->
+<div class="p-spacing-sm bg-surface-container rounded-xl flex items-center justify-between flex-wrap gap-spacing-sm">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Restauration Point-in-Time (PITR) Active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Capacité de réenclenchement à la seconde près en cas d'erreur humaine d'édition.</span>
+</div>
+</div>
+<button class="px-spacing-sm py-spacing-2xs rounded bg-surface-container-highest text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors">
+            Tester la procédure de bascule
+          </button>
+</div>
+</div>
+</div>
+<!-- COLONNE DROITE (4 COLONNES) : CONTRÔLE SÉLECTIF CDN, URGENCE & LOGS AUDIT EN TEMPS RÉEL -->
+<div class="xl:col-span-4 flex flex-col gap-spacing-md">
+<!-- MODULE : CONTRÔLE TECHNIQUE RAPIDE & PURGE CDN -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-spacing-md flex flex-col gap-spacing-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Contrôles Plateforme</h2>
+</div>
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+</div>
+<!-- Commutateur Mode Maintenance d'Urgence -->
+<div class="p-spacing-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex flex-col pr-spacing-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Mode Maintenance Public</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Affiche la page officielle d'intervention technique</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="maintenanceToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-variant after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-error"></div>
+</label>
+</div>
+<!-- Purge CDN Sélective -->
+<div class="flex flex-col gap-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Purge Sélective Edge CDN (2 sec)</span>
+<div class="grid grid-cols-2 gap-spacing-2xs">
+<button class="p-spacing-2xs bg-surface-container hover:bg-surface-container-high rounded text-left flex flex-col transition-colors">
+<span class="font-label-md text-label-md text-on-surface font-bold">Fiches Chantiers</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">/chantiers/*</span>
+</button>
+<button class="p-spacing-2xs bg-surface-container hover:bg-surface-container-high rounded text-left flex flex-col transition-colors">
+<span class="font-label-md text-label-md text-on-surface font-bold">Actualités &amp; Presse</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">/actualites/*</span>
+</button>
+<button class="p-spacing-2xs bg-surface-container hover:bg-surface-container-high rounded text-left flex flex-col transition-colors">
+<span class="font-label-md text-label-md text-on-surface font-bold">Bannières Flash</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">/api/banners</span>
+</button>
+<button class="p-spacing-2xs bg-secondary-fixed hover:bg-secondary-fixed-dim text-on-secondary-fixed rounded text-left flex flex-col transition-colors font-bold">
+<span class="font-label-md text-label-md">Tout Purger</span>
+<span class="font-label-mono text-label-mono text-secondary">Global Cache</span>
+</button>
+</div>
+</div>
+<!-- Moteur Bilingue & IA -->
+<div class="pt-spacing-xs flex flex-col gap-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Moteur de Traduction Assistée</span>
+<div class="flex items-center justify-between p-spacing-2xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-primary text-[18px]">translate</span>
+<span class="font-body-sm text-body-sm text-on-surface">Synchro Bilingue FR • EN</span>
+</div>
+<span class="px-spacing-2xs py-spacing-4xs bg-surface-container text-primary font-label-mono text-label-mono rounded">Connecté</span>
+</div>
+</div>
+</div>
+<!-- MODULE : JOURNAL D'AUDIT SYSTÈME & SÉCURITÉ EN TEMPS RÉEL (SYSLOG) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-spacing-md flex flex-col gap-spacing-md flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">manage_history</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-primary">Journal d'Audit &amp; Sécurité</h2>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Événements récents (UTC+1)</span>
+</div>
+</div>
+<span class="p-spacing-3xs bg-surface-container-high rounded text-primary" title="Flux en continu">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+</span>
+</div>
+<div class="flex flex-col gap-spacing-sm overflow-y-auto max-h-96 pr-spacing-3xs font-body-sm text-body-sm">
+<!-- Log 1 -->
+<div class="p-spacing-2xs rounded-lg bg-surface-container-low flex flex-col gap-spacing-4xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="text-primary font-bold">11:24:12 • Authentification</span>
+<span class="text-emerald-700 font-bold">SUCCÈS 2FA</span>
+</div>
+<p class="text-on-surface">Connexion sécurisée de <strong>M. Seydou Kane</strong> depuis Libreville (ANINF Gateway).</p>
+</div>
+<!-- Log 2 -->
+<div class="p-spacing-2xs rounded-lg bg-surface-container-low flex flex-col gap-spacing-4xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="text-primary font-bold">10:58:04 • CDN Edge</span>
+<span class="text-on-surface font-bold">PROPAGATION</span>
+</div>
+<p class="text-on-surface">Publication de la fiche <em>« Bitumage Boulevard Alénakiri »</em> diffusée sur 42 nœuds.</p>
+</div>
+<!-- Log 3 -->
+<div class="p-spacing-2xs rounded-lg bg-error-container text-on-error-container flex flex-col gap-spacing-4xs">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="font-bold text-error">09:41:19 • Pare-feu WAF</span>
+<span class="font-bold uppercase bg-error text-on-error px-spacing-3xs rounded">BLOQUÉ</span>
+</div>
+<p class="text-on-error-container">Tentative d'accès non autorisé par IP étrangère (85.203.44.12) sur le terminal admin.</p>
+</div>
+<!-- Log 4 -->
+<div class="p-spacing-2xs rounded-lg bg-surface-container-low flex flex-col gap-spacing-4xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="text-primary font-bold">03:00:01 • Cron Système</span>
+<span class="text-emerald-700 font-bold">ARCHIVÉ</span>
+</div>
+<p class="text-on-surface">Sauvegarde incrémentielle automatisée réussie (Volume: 1.24 Go, Supabase S3).</p>
+</div>
+</div>
+<button class="w-full py-spacing-2xs bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-md text-label-md flex items-center justify-center gap-spacing-2xs transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Registre Complet d'Audit (Conforme DGPDP)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- BANDEAU DE PIED DE PAGE TECHNIQUE -->
+<section class="bg-surface-container-lowest px-spacing-md py-spacing-sm shadow-sm flex flex-col sm:flex-row items-center justify-between gap-spacing-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-spacing-xs">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>Plateforme Sécurisée CITP Gabon • Direction des Systèmes d'Information (DSI)</span>
+</div>
+<div class="flex items-center gap-spacing-md font-label-mono text-label-mono">
+<span>Datacenter Libreville • PG 15.4</span>
+<span>Cloudflare Edge v2.4 Enterprise</span>
+</div>
+</section>
+<!-- MODALE INTERACTIVE / TOAST POUR RETOUR ACTION -->
+<div class="fixed bottom-8 right-8 z-50 bg-primary text-on-primary px-spacing-md py-spacing-sm rounded-xl shadow-xl flex items-center gap-spacing-xs transition-opacity duration-300 opacity-0 pointer-events-none" id="adminToast">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold" id="toastTitle">Action Système Exécutée</span>
+<span class="font-body-sm text-body-sm" id="toastDesc">Le cache Cloudflare Edge a été purgé avec succès.</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toast = document.getElementById('adminToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastDesc = document.getElementById('toastDesc');
+    const btnPurge = document.getElementById('btnPurgeCache');
+    const btnBackup = document.getElementById('btnBackupNow');
+    const maintenanceToggle = document.getElementById('maintenanceToggle');
+
+    function showToast(title, desc) {
+      if (!toast) return;
+      toastTitle.textContent = title;
+      toastDesc.textContent = desc;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 4000);
+    }
+
+    if (btnPurge) {
+      btnPurge.addEventListener('click', () => {
+        showToast('Purge Edge CDN Réussie', 'Les 42 nœuds de cache Cloudflare ont été actualisés pour le domaine CITP Gabon.');
+      });
+    }
+
+    if (btnBackup) {
+      btnBackup.addEventListener('click', () => {
+        showToast('Snapshot Manuel Enclenché', 'Génération immédiate du dump crypté PostgreSQL sur Supabase Libreville.');
+      });
+    }
+
+    if (maintenanceToggle) {
+      maintenanceToggle.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          showToast('Mode Maintenance Activé', 'Le site public affiche désormais la page institutionnelle de maintenance temporaire.');
+        } else {
+          showToast('Plateforme Rétablie', 'Le portail CITP Gabon est de nouveau accessible à l’ensemble des citoyens.');
+        }
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high py-spacing-xs px-spacing-md text-on-surface-variant text-body-sm font-body-sm flex flex-wrap items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schema</span><span class="font-label-md text-label-md text-on-surface">Workflow institutionnel :</span><span class="font-body-sm text-body-sm text-on-surface-variant">Brouillon ➔ En relecture ➔ Publication officielle par un Validateur</span></div><div class="flex items-center gap-spacing-md text-body-sm font-body-sm"><span>Besoin d'aide ? Tél : <strong>+241 01 76 00 00</strong></span><span>Support DSI CITP Gabon • v2.4</span></div></footer></div></body></html>

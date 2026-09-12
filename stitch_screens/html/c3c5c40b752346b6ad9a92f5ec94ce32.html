@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>CITP Gabon - Back-Office Administration</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7c97ef","surface":"#faf8ff","on-primary":"#ffffff","on-tertiary-fixed":"#001e2d","primary-container":"#002b7f","on-tertiary-fixed-variant":"#004c6b","inverse-on-surface":"#eef0ff","on-primary-fixed":"#00174c","inverse-surface":"#283044","on-tertiary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","outline-variant":"#c4c6d3","on-surface-variant":"#444651","on-surface":"#131b2e","primary-fixed-dim":"#b5c4ff","on-secondary-fixed":"#2c1600","tertiary":"#002131","outline":"#747683","primary-fixed":"#dbe1ff","tertiary-container":"#00374f","secondary":"#8a5100","secondary-fixed-dim":"#ffb86e","secondary-container":"#fc9910","on-error-container":"#93000a","error":"#ba1a1a","background":"#faf8ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#0ea6e3","on-error":"#ffffff","surface-tint":"#3d5aad","surface-variant":"#dae2fd","tertiary-fixed":"#c6e7ff","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","inverse-primary":"#b5c4ff","on-secondary-container":"#643900","tertiary-fixed-dim":"#81cfff","error-container":"#ffdad6","primary":"#001851","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-secondary-fixed-variant":"#693c00","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#224194","secondary-fixed":"#ffdcbd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"spacing-md":"1.5rem","gutter-desktop":"1.5rem","spacing-3xs":"0.25rem","spacing-2xs":"0.5rem","spacing-lg":"2rem","spacing-3xl":"6rem","spacing-xl":"3rem","gutter-mobile":"1rem","spacing-xs":"0.75rem","spacing-sm":"1rem","spacing-4xs":"0.125rem","container-max":"1280px","spacing-2xl":"4rem"},"fontFamily":{"label-md":["Inter"],"label-mono":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"16px","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-spacing-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-spacing-xs"><img alt="citp-logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL0dcbRRgY7SsdwPT7sYO-pdOf_JRWsY9Vou8xiXpMa26-hBwXVXIR4OjvVZRyhtogBqvEWb2e0U_qUE0EvxHJMlMQ-4bC-gUmtLkQLNfrSvNJWF1RkUgQMbCuqsOi5FlkYccQESfLaWTJWUrHwifDKCHWBE__Cc5ozVEZQFc6X4qjXcDbQ3ZFjE2ZIBQ80cBwC62EdvmeyUDciUkdXVsa-jbmny9LevKs5O1oA0vg8haN7CTEppTpPyu20pq04PQUgroTWqIhnT8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CITP Gabon</span><span class="font-label-mono text-label-mono text-secondary">ESPACE ÉDITION</span></div></div></div><div class="px-spacing-md py-spacing-xs bg-surface-container-low mx-spacing-xs mt-spacing-xs rounded-xl flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span><div class="flex flex-col"><span class="font-label-mono text-label-mono text-on-surface">Éditer comme dans Word</span><span class="font-body-sm text-body-sm text-on-surface-variant">Publier en 1 clic</span></div></div><nav class="flex flex-col gap-spacing-4xs px-spacing-xs mt-spacing-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Section Principale</span><a aria-current="page" class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl transition-colors bg-primary-container text-on-primary font-bold" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-title-md text-title-md">Tableau de bord</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mes-contenus-articles" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-title-md text-title-md">Mes Contenus &amp; Articles</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="fiches-chantiers-realisations" href="#"><span class="material-symbols-outlined text-[20px]">engineering</span><span class="font-title-md text-title-md">Fiches Chantiers &amp; Projets</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Médias &amp; Ressources</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mediatheque-terrain" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-title-md text-title-md">Médiathèque Terrain</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bannieres-alertes-info" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-md text-title-md">Bannières &amp; Alertes Info</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Suivi &amp; Interactions</span><a class="flex items-center justify-between px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="boite-de-reception" href="#"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-title-md text-title-md">Boîte de réception</span></div><span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono">3</span></a></nav></div><div class="flex flex-col gap-spacing-4xs px-spacing-xs pb-spacing-sm pt-spacing-xs border-t border-surface-container-high"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Assistance &amp; Paramètres</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="guide-videos-aide" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary-container">help_outline</span><span class="font-title-md text-title-md">Guide &amp; Tutoriels Vidéo</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="parametres-session" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Paramètres de session</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-title-md text-title-md">Déconnexion</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-spacing-md"><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-2xs bg-surface-container px-spacing-xs py-spacing-3xs rounded-xl"><span class="font-label-md text-label-md text-primary font-bold">Back-Office Édition</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-high text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-mono text-label-mono">Rôle : Éditeur (Brouillons &amp; Contenus)</span></div><div class="hidden xl:flex items-center gap-spacing-3xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[18px]">cloud_done</span><span>Sauvegardé automatiquement (Supabase)</span></div></div><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-xs py-spacing-3xs rounded-xl"><button class="px-spacing-2xs py-spacing-4xs rounded-lg bg-primary-container text-on-primary font-label-mono text-label-mono">FR</button><button class="px-spacing-2xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono relative flex items-center gap-1">EN <span class="w-1.5 h-1.5 rounded-full bg-secondary-container" title="Traductions partielles"></span></button></div><a class="flex items-center gap-spacing-3xs text-primary hover:text-primary-container font-label-md text-label-md bg-surface-container px-spacing-xs py-spacing-2xs rounded-xl transition-colors" href="#" target="_blank"><span class="material-symbols-outlined text-[18px]">open_in_new</span><span class="hidden lg:inline">Voir le site public</span></a><button class="relative p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-spacing-xs pl-spacing-xs border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Diane M.</span><span class="font-label-mono text-label-mono text-on-surface-variant leading-tight">Chargée de Com &amp; Dir.</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Top Bar Overwrite to reflect Executive Validator Identity -->
+<script>
+    (function updateHeaderToValidator() {
+      const header = document.querySelector('header');
+      if (!header) return;
+
+      const roleBadge = header.querySelector('.bg-surface-container-high');
+      if (roleBadge) {
+        roleBadge.className = 'flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-secondary-fixed text-on-secondary-fixed shadow-sm';
+        roleBadge.innerHTML = `
+          <span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+          <span class="font-label-mono text-label-mono font-bold tracking-tight">Rôle : Validateur Suprême (Pouvoir de Publication)</span>
+        `;
+      }
+
+      const spaceSelector = header.querySelector('.bg-surface-container');
+      if (spaceSelector) {
+        spaceSelector.innerHTML = `
+          <span class="font-label-md text-label-md text-primary font-bold">Direction & Validation Institutionnelle</span>
+          <span class="material-symbols-outlined text-[16px] text-on-surface-variant">verified_user</span>
+        `;
+      }
+
+      const syncStatus = header.querySelector('.hidden.xl\\:flex');
+      if (syncStatus) {
+        syncStatus.innerHTML = `
+          <span class="material-symbols-outlined text-secondary-container text-[18px]">lock</span>
+          <span class="font-label-mono text-label-mono text-on-surface">Connexion sécurisée 2FA • Déploiement Edge Direct</span>
+        `;
+      }
+
+      const userBlock = header.querySelector('.border-l.border-surface-container-high');
+      if (userBlock) {
+        userBlock.innerHTML = `
+          <div class="flex flex-col text-right">
+            <span class="font-title-md text-title-md text-primary font-bold leading-tight">Seydou Kane</span>
+            <span class="font-label-mono text-label-mono text-secondary-container font-semibold leading-tight">Président & Directeur de Publication</span>
+          </div>
+          <div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+            <span class="material-symbols-outlined text-[20px]">shield_person</span>
+          </div>
+        `;
+      }
+    })();
+  </script>
+<!-- Executive Control Panel Header -->
+<div class="px-spacing-md pt-spacing-md pb-spacing-lg bg-surface">
+<div class="max-w-[1400px] mx-auto flex flex-col gap-spacing-md">
+<!-- Top Title & Executive Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-spacing-md">
+<div class="flex flex-col gap-spacing-3xs max-w-3xl">
+<div class="flex items-center gap-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-mono text-label-mono uppercase tracking-wider">
+              Haute Approbation CITP Gabon
+            </span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">Dernier arbitrage : Il y a 14 min</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Tableau de bord Validateur &amp; Direction de Publication
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Supervision éditoriale, validation bilingue et mise en ligne officielle des contenus, chantiers et alertes du portail institutionnel <span class="font-bold text-primary">citpgabon.com</span>.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-spacing-2xs">
+<button class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-2xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Historique des publications</span>
+</button>
+<a class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-2xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-all shadow-sm" href="#" target="_blank">
+<span class="material-symbols-outlined text-[18px]">preview</span>
+<span>Aperçu global du site</span>
+</a>
+<button class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-2xs rounded-xl bg-error hover:opacity-90 text-on-error font-title-md text-title-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span>Rejeter le lot</span>
+</button>
+<button class="flex items-center gap-spacing-3xs px-spacing-md py-spacing-2xs rounded-xl bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md shadow-md hover:shadow-lg transition-all">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span>Valider tout le lot vérifié</span>
+</button>
+</div>
+</div>
+<!-- Priority Action Banner / Flash Alert in Waiting State -->
+<div class="relative overflow-hidden rounded-xl bg-secondary text-on-secondary shadow-md">
+<div class="p-spacing-md flex flex-col md:flex-row md:items-center justify-between gap-spacing-md">
+<div class="flex items-start gap-spacing-xs">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[28px] animate-pulse">crisis_alert</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-2xs mb-spacing-4xs">
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono uppercase">
+                  Alerte Flash Urgente
+                </span>
+<span class="text-secondary-fixed font-label-mono text-label-mono">Soumis à 16:42 par D. Mayila</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-secondary font-bold">
+                Travaux de bitumage Alénakiri PK12 : Déviation d'urgence axe Sud
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary-fixed max-w-2xl">
+                Bannière déroulante rouge à diffuser immédiatement sur le portail public pour avertir les usagers de la route et les transporteurs lourds.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-spacing-2xs shrink-0">
+<button class="px-spacing-xs py-spacing-2xs rounded-xl bg-surface-container-lowest text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors">
+              Modifier le texte
+            </button>
+<button class="px-spacing-md py-spacing-2xs rounded-xl bg-surface-container-lowest text-secondary font-title-md text-title-md font-bold hover:bg-surface-container transition-all flex items-center gap-spacing-3xs shadow-md">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+<span>Approuver et diffuser en direct</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Key Performance Indicators (KPIs) Metrics Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-spacing-sm">
+<!-- KPI 1 -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">En attente d'approbation</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">rate_review</span>
+</div>
+</div>
+<div class="flex items-baseline gap-spacing-2xs">
+<span class="font-display-lg text-display-lg text-primary">3</span>
+<span class="font-title-md text-title-md text-secondary-container font-bold">Soumissions</span>
+</div>
+<div class="mt-spacing-2xs pt-spacing-2xs flex items-center gap-spacing-3xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">warning</span>
+<span>2 articles chantiers, 1 recrutement</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Fiches Chantier à réviser</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">construction</span>
+</div>
+</div>
+<div class="flex items-baseline gap-spacing-2xs">
+<span class="font-display-lg text-display-lg text-primary">1</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Mise à jour majeure</span>
+</div>
+<div class="mt-spacing-2xs pt-spacing-2xs flex items-center gap-spacing-3xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">trending_up</span>
+<span class="font-semibold text-primary">Alénakiri franchit 98%</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Contrôle Bilingue IA</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+</div>
+</div>
+<div class="flex items-baseline gap-spacing-2xs">
+<span class="font-display-lg text-display-lg text-secondary">0</span>
+<span class="font-title-md text-title-md text-on-surface-variant">Erreurs bloquantes</span>
+</div>
+<div class="mt-spacing-2xs pt-spacing-2xs flex items-center gap-spacing-3xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Concordance FR/EN 99.4%</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-spacing-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Vélocité de publication</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+</div>
+<div class="flex items-baseline gap-spacing-2xs">
+<span class="font-display-lg text-display-lg text-primary">&lt; 15</span>
+<span class="font-title-md text-title-md text-primary font-bold">Minutes</span>
+</div>
+<div class="mt-spacing-2xs pt-spacing-2xs flex items-center gap-spacing-3xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">speed</span>
+<span>Mise en cache Edge ultra-rapide</span>
+</div>
+</div>
+</div>
+<!-- Main Operational Split Layout: Review Queue vs Visual Inspector Diff -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-md items-start">
+<!-- LEFT COLUMN: Interactive Submission Queue (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-spacing-sm">
+<div class="flex items-center justify-between pb-spacing-3xs">
+<div class="flex items-center gap-spacing-2xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">
+                File d'attente d'approbation
+              </h3>
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-mono text-label-mono flex items-center justify-center font-bold">
+                3
+              </span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Tri : Priorité hiérarchique</span>
+</div>
+<!-- Queue Item 1 (Selected/Active) -->
+<div class="p-spacing-md rounded-xl bg-surface-container-lowest shadow-md transition-all cursor-pointer relative" id="card-item-1">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-primary font-label-mono text-label-mono uppercase">
+                Article Chantier • N°PUB-4402
+              </span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Soumis il y a 2h</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold leading-tight mb-spacing-2xs">
+              Avancement des travaux de l'axe routier PK12 - Ntoum : 85% achevé
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-spacing-sm">
+              Rapport d'avancement des équipes de terrassement lourd et pose d'enrobé bitumineux haute densité sur le corridor stratégique de la Nationale 1.
+            </p>
+<div class="flex items-center gap-spacing-sm py-spacing-2xs bg-surface-container-low rounded-xl px-spacing-xs mb-spacing-sm">
+<div class="flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<span class="font-label-mono text-label-mono text-on-surface">Diane M.</span>
+</div>
+<div class="flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">g_translate</span>
+<span class="font-label-mono text-label-mono text-secondary">FR / EN OK</span>
+</div>
+<div class="flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-[16px] text-primary">photo_library</span>
+<span class="font-label-mono text-label-mono text-on-surface">4 WebP HD</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-spacing-2xs pt-spacing-2xs">
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-title-md text-title-md flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+<span>Examiner le Diff</span>
+</button>
+<div class="flex items-center gap-spacing-3xs">
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-surface-container text-error font-title-md text-title-md hover:bg-error-container">
+                  Renvoyer
+                </button>
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-primary-container text-on-primary font-title-md text-title-md font-bold shadow-sm hover:bg-primary">
+                  Valider &amp; Publier
+                </button>
+</div>
+</div>
+</div>
+<!-- Queue Item 2 -->
+<div class="p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-tertiary-container font-label-mono text-label-mono uppercase">
+                Fiche Réalisation Ouvrage • N°PUB-4401
+              </span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Soumis à 11:15</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight mb-spacing-2xs">
+              Mise à jour avancement Réhabilitation Alénakiri PK12 (98%)
+            </h4>
+<div class="flex items-center gap-spacing-xs mb-spacing-sm">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full w-[98%] rounded-full"></div>
+</div>
+<span class="font-label-mono text-label-mono text-secondary-container font-bold">98%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-body-sm font-body-sm mb-spacing-xs">
+<span>Levé topographique &amp; géomètre certifié</span>
+<span class="font-label-mono text-label-mono text-secondary">Rapport DGVR joint</span>
+</div>
+<div class="flex items-center justify-end gap-spacing-2xs">
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-surface-container-high text-on-surface font-title-md text-title-md">
+                Annoter
+              </button>
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-primary-container text-on-primary font-title-md text-title-md">
+                Approuver l'étape
+              </button>
+</div>
+</div>
+<!-- Queue Item 3 (Alert warning on English version) -->
+<div class="p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-center justify-between mb-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-on-surface-variant font-label-mono text-label-mono uppercase">
+                Actualité RH &amp; RSE • N°PUB-4399
+              </span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-mono text-label-mono font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">translate</span> Version EN Absente
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight mb-spacing-2xs">
+              Célébration du 8 mars sur nos bases techniques de Port-Gentil et Franceville
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-spacing-sm">
+              Mise en avant de nos ingénieures de chantier et conductrices d'engins lourds CITP. Rédaction française validée par la RH.
+            </p>
+<div class="flex items-center justify-between gap-spacing-2xs pt-spacing-2xs">
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-secondary-fixed text-on-secondary-fixed font-title-md text-title-md flex items-center gap-spacing-3xs">
+<span class="material-symbols-outlined text-[16px]">assignment_return</span>
+<span>Renvoyer pour traduction</span>
+</button>
+<button class="px-spacing-xs py-spacing-3xs rounded-xl bg-surface-container-high text-on-surface font-title-md text-title-md">
+                Publier uniquement en FR
+              </button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Visual Diff Inspector & Legal Compliance Workspace (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-spacing-sm">
+<div class="p-spacing-md rounded-xl bg-surface-container-lowest shadow-md">
+<!-- Inspector Header Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-spacing-sm gap-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-secondary font-bold uppercase">Inspection Directeur de Publication</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Contrôle de Conformité &amp; Visuel (Diff)</h3>
+</div>
+</div>
+<div class="flex items-center gap-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container-high text-primary font-label-mono text-label-mono">
+                  ID : ACT-2025-058
+                </span>
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono">
+                  Cache : Staging Cloud
+                </span>
+</div>
+</div>
+<!-- Pre-publication Technical Metadata Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-spacing-2xs p-spacing-xs bg-surface-container-low rounded-xl mb-spacing-md">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Rédacteur</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Diane Mayila</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Rubrique Cible</span>
+<span class="font-title-md text-title-md text-primary font-bold">Grands Projets BTP</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Conformité Charte</span>
+<span class="font-title-md text-title-md text-secondary font-bold">100% Validé</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Indexation Google</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Prêt (SEO Gabon)</span>
+</div>
+</div>
+<!-- Visual Content Preview Card -->
+<div class="rounded-xl bg-surface-container p-spacing-sm mb-spacing-md">
+<div class="flex items-center justify-between mb-spacing-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase font-bold">Aperçu interactif rendu Web</span>
+<div class="flex items-center gap-spacing-3xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest"></span>
+</div>
+</div>
+<!-- Content Simulation -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm">
+<div class="relative w-full h-56 rounded-lg overflow-hidden mb-spacing-sm">
+<img class="w-full h-full object-cover" data-alt="Panoramic daytime view of heavy asphalt road laying equipment and dump trucks operating on the National Route in Gabon under bright African sunlight, high precision civil engineering machinery, vibrant orange construction details and dark asphalt finish, pristine corporate photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDgkNTC1kwasFhl-ZyJAN8UuwKw8sA1bl9ru7EdSGAibez0KwUNE168RlWhUe4OQ7hhk3MfoWbHW5Y0xLm_Rh9KCaI_23UmAybvOCrO7VmQqkkMCJpHg6v3bc841v6v4XpkjzcgZOjWQh8a2RbcMqZcYz8fkiVD8DDgDO87TF4j4f600WFsiClg5bqlJMMkj5kliNZ5kip4QnZWWn67_qGZKUcbqIg0HFcK8lv53BG_t_9jaOjo_0vPA"/>
+<div class="absolute bottom-2 left-2 px-spacing-2xs py-spacing-4xs rounded-md bg-primary/80 backdrop-blur-md text-on-primary font-label-mono text-label-mono">
+                    Axe PK12 - Ntoum (Section 3B)
+                  </div>
+<div class="absolute top-2 right-2 px-spacing-2xs py-spacing-4xs rounded-md bg-secondary-container text-on-secondary-container font-label-mono text-label-mono font-bold">
+                    85% Achevé
+                  </div>
+</div>
+<div class="flex items-center gap-spacing-2xs mb-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-primary font-label-mono text-label-mono">Communiqué Officiel</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• 14 Mai 2025</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-spacing-2xs">
+                  Axe routier PK12 - Ntoum : Pose finale des enrobés et renforcement des ouvrages hydrauliques
+                </h4>
+<p class="font-body-md text-body-md text-on-surface mb-spacing-xs">
+                  Dans le cadre du programme de modernisation des infrastructures routières de la région de l'Estuaire, CITP Gabon annonce le franchissement du cap des 85% d'exécution sur le tronçon PK12 - Ntoum. Les équipes opèrent 24h/24 pour garantir une livraison avant la prochaine saison des pluies.
+                </p>
+<div class="p-spacing-xs rounded-lg bg-surface-container-low flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-semibold">Maître d'Ouvrage : Ministère des Travaux Publics</span>
+<span class="text-secondary font-bold">Budget alloué : Conforme</span>
+</div>
+</div>
+</div>
+<!-- Institutional & Legal Checklist -->
+<div class="flex flex-col gap-spacing-2xs mb-spacing-md">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase font-bold">Contrôles Réglementaires &amp; Juridiques</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-spacing-2xs">
+<div class="p-spacing-xs rounded-xl bg-surface-container-low flex items-start gap-spacing-2xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">task_alt</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight font-bold">Visa DGVR</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Conforme accord cadre</span>
+</div>
+</div>
+<div class="p-spacing-xs rounded-xl bg-surface-container-low flex items-start gap-spacing-2xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">verified_user</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight font-bold">Droit à l'image</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Personnel avec EPI validé</span>
+</div>
+</div>
+<div class="p-spacing-xs rounded-xl bg-surface-container-low flex items-start gap-spacing-2xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">shield</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight font-bold">Non-divulgation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pas de données sensibles</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Validator Annotation & Directive for Editor -->
+<div class="flex flex-col gap-spacing-3xs mb-spacing-md">
+<label class="font-title-md text-title-md text-primary font-bold flex items-center justify-between" for="validator-notes">
+<span>Directives &amp; Instructions pour Diane M. (Rédactrice)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Sera notifié par messagerie interne</span>
+</label>
+<textarea class="w-full p-spacing-xs rounded-xl bg-surface text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant focus:outline-none shadow-inner" id="validator-notes" placeholder="Ex: Excellent rapport. Veuillez ajouter la mention du laboratoire de contrôle géotechnique LNBTP avant la publication du communiqué officiel." rows="2"></textarea>
+</div>
+<!-- Ultimate Executive Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-spacing-sm pt-spacing-sm">
+<button class="w-full sm:w-auto px-spacing-md py-spacing-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-error font-title-md text-title-md flex items-center justify-center gap-spacing-3xs transition-colors">
+<span class="material-symbols-outlined text-[20px]">assignment_return</span>
+<span>Renvoyer en révision avec motif</span>
+</button>
+<div class="flex items-center gap-spacing-2xs w-full sm:w-auto">
+<button class="w-full sm:w-auto px-spacing-lg py-spacing-xs rounded-xl bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md font-bold shadow-lg transition-all flex items-center justify-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-[22px]">publish</span>
+<span>Publier officiellement sur le site web (Mise en cache instantanée)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Legal Audit Log & Cryptographic Timestamping -->
+<div class="p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-spacing-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-primary text-[24px]">history_edu</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">
+                Journal d'Audit &amp; Traçabilité Légale des Publications
+              </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Registre immuable des actes de publication signés électroniquement
+              </span>
+</div>
+</div>
+<button class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-xl bg-surface-container-high text-on-surface font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Exporter le registre légal (.CSV)</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-mono text-label-mono uppercase">
+<th class="py-spacing-2xs px-spacing-xs rounded-l-lg">Horodatage (UTC+1)</th>
+<th class="py-spacing-2xs px-spacing-xs">Contenu Publié</th>
+<th class="py-spacing-2xs px-spacing-xs">Signataire Autorisé</th>
+<th class="py-spacing-2xs px-spacing-xs">Statut CDN / Cache</th>
+<th class="py-spacing-2xs px-spacing-xs rounded-r-lg text-right">Empreinte Numérique</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-spacing-xs px-spacing-xs font-label-mono text-label-mono text-on-surface-variant">12 Mai 2025 - 14:20:18</td>
+<td class="py-spacing-xs px-spacing-xs font-semibold text-primary">Offre d'emploi : Ingénieur Géotechnicien Senior (Port-Gentil)</td>
+<td class="py-spacing-xs px-spacing-xs">
+<div class="flex items-center gap-spacing-3xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-bold text-on-surface">M. Seydou Kane</span>
+</div>
+</td>
+<td class="py-spacing-xs px-spacing-xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-secondary font-label-mono text-label-mono font-bold">Actif • Edge 100%</span>
+</td>
+<td class="py-spacing-xs px-spacing-xs text-right font-label-mono text-label-mono text-on-surface-variant">SHA-256: 8f4b...39e1</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-spacing-xs px-spacing-xs font-label-mono text-label-mono text-on-surface-variant">10 Mai 2025 - 09:12:04</td>
+<td class="py-spacing-xs px-spacing-xs font-semibold text-primary">Bannière Flash Info : Ralentissement temporaire PK12 travaux nuit</td>
+<td class="py-spacing-xs px-spacing-xs">
+<div class="flex items-center gap-spacing-3xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-bold text-on-surface">M. Seydou Kane</span>
+</div>
+</td>
+<td class="py-spacing-xs px-spacing-xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono">Archivé (Expiré)</span>
+</td>
+<td class="py-spacing-xs px-spacing-xs text-right font-label-mono text-label-mono text-on-surface-variant">SHA-256: 12c0...aa84</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-spacing-xs px-spacing-xs font-label-mono text-label-mono text-on-surface-variant">08 Mai 2025 - 18:45:51</td>
+<td class="py-spacing-xs px-spacing-xs font-semibold text-primary">Fiche Réalisation : Pont sur la rivière Abanga (Axe Bifoun)</td>
+<td class="py-spacing-xs px-spacing-xs">
+<div class="flex items-center gap-spacing-3xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-bold text-on-surface">Direction de Publication</span>
+</div>
+</td>
+<td class="py-spacing-xs px-spacing-xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-lg bg-surface-container text-secondary font-label-mono text-label-mono font-bold">Actif • Edge 100%</span>
+</td>
+<td class="py-spacing-xs px-spacing-xs text-right font-label-mono text-label-mono text-on-surface-variant">SHA-256: 44e9...9b27</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Institutional Supervisor Health Footer Bar -->
+<div class="rounded-xl bg-surface-container p-spacing-sm flex flex-col md:flex-row md:items-center justify-between gap-spacing-sm mb-spacing-lg">
+<div class="flex flex-wrap items-center gap-spacing-md text-on-surface text-body-sm font-body-sm">
+<div class="flex items-center gap-spacing-2xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-bold">Base Supabase Gabon Enterprise : En ligne (Latence 18ms)</span>
+</div>
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-primary text-[18px]">public</span>
+<span>Passerelle CDN Edge Cloudflare : 42 nœuds synchronisés</span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-xs">
+<button class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-2xs rounded-xl bg-error hover:opacity-90 text-on-error font-title-md text-title-md transition-all shadow-sm" onclick="confirmFreeze()">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+<span>Geler les publications (Arrêt d'urgence)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function confirmFreeze() {
+      if (confirm("ATTENTION : Cette commande d'urgence bloque immédiatement toute nouvelle publication et met le site public citpgabon.com en mode lecture seule stricte. Confirmer l'action de direction ?")) {
+        alert("Mode gel institutionnel activé avec succès. Aucune modification ne peut être poussée sans double clé de déverrouillage.");
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high py-spacing-xs px-spacing-md text-on-surface-variant text-body-sm font-body-sm flex flex-wrap items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schema</span><span class="font-label-md text-label-md text-on-surface">Workflow institutionnel :</span><span class="font-body-sm text-body-sm text-on-surface-variant">Brouillon ➔ En relecture ➔ Publication officielle par un Validateur</span></div><div class="flex items-center gap-spacing-md text-body-sm font-body-sm"><span>Besoin d'aide ? Tél : <strong>+241 01 76 00 00</strong></span><span>Support DSI CITP Gabon • v2.4</span></div></footer></div></body></html>

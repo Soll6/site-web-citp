@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>CITP Gabon - Back-Office Administration</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7c97ef","surface":"#faf8ff","on-primary":"#ffffff","on-tertiary-fixed":"#001e2d","primary-container":"#002b7f","on-tertiary-fixed-variant":"#004c6b","inverse-on-surface":"#eef0ff","on-primary-fixed":"#00174c","inverse-surface":"#283044","on-tertiary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","outline-variant":"#c4c6d3","on-surface-variant":"#444651","on-surface":"#131b2e","primary-fixed-dim":"#b5c4ff","on-secondary-fixed":"#2c1600","tertiary":"#002131","outline":"#747683","primary-fixed":"#dbe1ff","tertiary-container":"#00374f","secondary":"#8a5100","secondary-fixed-dim":"#ffb86e","secondary-container":"#fc9910","on-error-container":"#93000a","error":"#ba1a1a","background":"#faf8ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#0ea6e3","on-error":"#ffffff","surface-tint":"#3d5aad","surface-variant":"#dae2fd","tertiary-fixed":"#c6e7ff","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","inverse-primary":"#b5c4ff","on-secondary-container":"#643900","tertiary-fixed-dim":"#81cfff","error-container":"#ffdad6","primary":"#001851","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-secondary-fixed-variant":"#693c00","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#224194","secondary-fixed":"#ffdcbd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"spacing-md":"1.5rem","gutter-desktop":"1.5rem","spacing-3xs":"0.25rem","spacing-2xs":"0.5rem","spacing-lg":"2rem","spacing-3xl":"6rem","spacing-xl":"3rem","gutter-mobile":"1rem","spacing-xs":"0.75rem","spacing-sm":"1rem","spacing-4xs":"0.125rem","container-max":"1280px","spacing-2xl":"4rem"},"fontFamily":{"label-md":["Inter"],"label-mono":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"16px","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-spacing-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-spacing-xs"><img alt="citp-logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL0dcbRRgY7SsdwPT7sYO-pdOf_JRWsY9Vou8xiXpMa26-hBwXVXIR4OjvVZRyhtogBqvEWb2e0U_qUE0EvxHJMlMQ-4bC-gUmtLkQLNfrSvNJWF1RkUgQMbCuqsOi5FlkYccQESfLaWTJWUrHwifDKCHWBE__Cc5ozVEZQFc6X4qjXcDbQ3ZFjE2ZIBQ80cBwC62EdvmeyUDciUkdXVsa-jbmny9LevKs5O1oA0vg8haN7CTEppTpPyu20pq04PQUgroTWqIhnT8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CITP Gabon</span><span class="font-label-mono text-label-mono text-secondary">ESPACE ÉDITION</span></div></div></div><div class="px-spacing-md py-spacing-xs bg-surface-container-low mx-spacing-xs mt-spacing-xs rounded-xl flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span><div class="flex flex-col"><span class="font-label-mono text-label-mono text-on-surface">Éditer comme dans Word</span><span class="font-body-sm text-body-sm text-on-surface-variant">Publier en 1 clic</span></div></div><nav class="flex flex-col gap-spacing-4xs px-spacing-xs mt-spacing-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Section Principale</span><a aria-current="page" class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl transition-colors bg-primary-container text-on-primary font-bold" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-title-md text-title-md">Tableau de bord</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mes-contenus-articles" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-title-md text-title-md">Mes Contenus &amp; Articles</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="fiches-chantiers-realisations" href="#"><span class="material-symbols-outlined text-[20px]">engineering</span><span class="font-title-md text-title-md">Fiches Chantiers &amp; Projets</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Médias &amp; Ressources</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mediatheque-terrain" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-title-md text-title-md">Médiathèque Terrain</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bannieres-alertes-info" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-md text-title-md">Bannières &amp; Alertes Info</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Suivi &amp; Interactions</span><a class="flex items-center justify-between px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="boite-de-reception" href="#"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-title-md text-title-md">Boîte de réception</span></div><span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono">3</span></a></nav></div><div class="flex flex-col gap-spacing-4xs px-spacing-xs pb-spacing-sm pt-spacing-xs border-t border-surface-container-high"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Assistance &amp; Paramètres</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="guide-videos-aide" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary-container">help_outline</span><span class="font-title-md text-title-md">Guide &amp; Tutoriels Vidéo</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="parametres-session" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Paramètres de session</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-title-md text-title-md">Déconnexion</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-spacing-md"><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-2xs bg-surface-container px-spacing-xs py-spacing-3xs rounded-xl"><span class="font-label-md text-label-md text-primary font-bold">Back-Office Édition</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-high text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-mono text-label-mono">Rôle : Éditeur (Brouillons &amp; Contenus)</span></div><div class="hidden xl:flex items-center gap-spacing-3xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[18px]">cloud_done</span><span>Sauvegardé automatiquement (Supabase)</span></div></div><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-xs py-spacing-3xs rounded-xl"><button class="px-spacing-2xs py-spacing-4xs rounded-lg bg-primary-container text-on-primary font-label-mono text-label-mono">FR</button><button class="px-spacing-2xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono relative flex items-center gap-1">EN <span class="w-1.5 h-1.5 rounded-full bg-secondary-container" title="Traductions partielles"></span></button></div><a class="flex items-center gap-spacing-3xs text-primary hover:text-primary-container font-label-md text-label-md bg-surface-container px-spacing-xs py-spacing-2xs rounded-xl transition-colors" href="#" target="_blank"><span class="material-symbols-outlined text-[18px]">open_in_new</span><span class="hidden lg:inline">Voir le site public</span></a><button class="relative p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-spacing-xs pl-spacing-xs border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Diane M.</span><span class="font-label-mono text-label-mono text-on-surface-variant leading-tight">Chargée de Com &amp; Dir.</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Zone Bannière Métrique & Titre Haut de Page -->
+<div class="px-spacing-md pt-spacing-md pb-spacing-lg bg-surface-container-low shadow-sm">
+<div class="max-w-[1400px] mx-auto flex flex-col gap-spacing-md">
+<!-- Ligne En-tête Supérieure -->
+<div class="flex flex-wrap items-center justify-between gap-spacing-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-2xs">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-secondary-container">Espace Rédactionnel CITP</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Module WYSIWYG Universel</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-spacing-4xs">Gestion des Contenus &amp; Articles</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Rédigez, traduisez et soumettez les communications d'entreprise en toute autonomie sans code technique.</p>
+</div>
+<div class="flex items-center gap-spacing-xs">
+<button class="px-spacing-xs py-spacing-2xs rounded-xl bg-surface-container-highest hover:bg-surface-variant text-on-surface font-title-md text-title-md flex items-center gap-spacing-3xs transition-all shadow-sm" id="btnQuickTour">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">play_circle</span>
+<span>Tutoriel 2 min</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary font-title-md text-title-md flex items-center gap-spacing-3xs shadow-md hover:shadow-lg transition-all" id="btnOpenNewModal">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Rédiger un nouvel article</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+<!-- Métriques Rédacteur Rapides -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-spacing-sm pt-spacing-2xs">
+<div class="bg-surface-container-lowest p-spacing-xs rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Mes Brouillons</span>
+<span class="font-headline-md text-headline-md text-primary mt-spacing-4xs">04</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">edit_document</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-spacing-xs rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Chez le Validateur</span>
+<span class="font-headline-md text-headline-md text-secondary-container mt-spacing-4xs">02</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined">hourglass_top</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-spacing-xs rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Publiés Officiels</span>
+<span class="font-headline-md text-headline-md text-tertiary mt-spacing-4xs">18</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">public</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-spacing-xs rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Traductions EN Requises</span>
+<span class="font-headline-md text-headline-md text-error mt-spacing-4xs">03</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined">translate</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Barre d'outils de Filtrage & Recherche -->
+<div class="max-w-[1400px] w-full mx-auto px-spacing-md py-spacing-sm">
+<div class="bg-surface-container-lowest p-spacing-xs rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-sm">
+<!-- Rubriques (Tabs) -->
+<div class="flex flex-wrap items-center gap-spacing-4xs overflow-x-auto pb-1 lg:pb-0">
+<button class="px-spacing-xs py-spacing-3xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">Toutes les rubriques</button>
+<button class="px-spacing-xs py-spacing-3xs rounded-lg hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">Actualités Projets</button>
+<button class="px-spacing-xs py-spacing-3xs rounded-lg hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">RSE &amp; Environnement</button>
+<button class="px-spacing-xs py-spacing-3xs rounded-lg hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">Communiqués Officiels</button>
+<button class="px-spacing-xs py-spacing-3xs rounded-lg hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">Presse &amp; Médias</button>
+<button class="px-spacing-xs py-spacing-3xs rounded-lg hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">Vie de l'Entreprise</button>
+</div>
+<!-- Filtres workflow & Barre recherche -->
+<div class="flex flex-wrap items-center gap-spacing-2xs">
+<div class="relative flex-1 min-w-[220px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#002b7f] transition-all" placeholder="Rechercher par mot-clé, titre..." type="text"/>
+</div>
+<select class="px-spacing-xs py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>Tous les statuts</option>
+<option>Brouillons récents</option>
+<option>En validation (Direction)</option>
+<option>Publiés sur le portail</option>
+<option>Archivés</option>
+</select>
+<select class="px-spacing-xs py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none cursor-pointer">
+<option>Trier par : Dernière modification</option>
+<option>Trier par : Titre alphabétique</option>
+<option>Trier par : Date de création</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Layout Principal : Grille Tableau Rédacteur + Panneau Latéral Historique & Assistant -->
+<div class="max-w-[1400px] w-full mx-auto px-spacing-md pb-spacing-xl">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-spacing-md items-start">
+<!-- Colonne Gauche : Liste Tabulaire des Contenus (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-spacing-sm">
+<!-- Cartouche d'aide rapide non-technicien -->
+<div class="bg-primary-container text-on-primary p-spacing-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-spacing-sm">
+<div class="w-9 h-9 rounded-lg bg-on-primary/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md leading-tight">Système de relecture sécurisée</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Vos modifications restent au statut brouillon jusqu'à soumission au Validateur en Chef. Aucun risque d'erreur en ligne.</span>
+</div>
+</div>
+<button class="px-spacing-xs py-1 rounded-lg bg-secondary-container text-on-secondary font-label-md text-label-md uppercase tracking-wider shrink-0" onclick="document.getElementById('editorDrawer').classList.remove('hidden')">Ouvrir éditeur</button>
+</div>
+<!-- Table des Articles -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- En-tête Table -->
+<div class="grid grid-cols-12 px-spacing-sm py-spacing-xs bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono uppercase tracking-wider">
+<div class="col-span-5">Titre de l'Article &amp; Rubrique</div>
+<div class="col-span-2 text-center">Bilinguisme</div>
+<div class="col-span-2 text-center">Statut Workflow</div>
+<div class="col-span-3 text-right">Actions Rédaction</div>
+</div>
+<!-- Ligne 1 (En Cours d'Édition Interactive) -->
+<div class="grid grid-cols-12 px-spacing-sm py-spacing-sm items-center hover:bg-surface-container-low transition-colors bg-surface-container-low/50">
+<div class="col-span-5 flex items-start gap-spacing-xs">
+<div class="w-14 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high shadow-xs mt-1">
+<img class="w-full h-full object-cover" data-alt="Vue aérienne d'un chantier d'infrastructure routière et de pont moderne au Gabon sous une lumière dorée équatoriale avec engins de terrassement jaunes et ouvriers avec casques de sécurité" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMkS9NCHvYZ0Tqp3VuLCQSzOMo2SoiBqSW5GnuJfOJQrtCkhrQ4mbTY544R4THhbGZO1HvMmdh9dd_XqzIkmkTudSNpO7qo1_NIO6fcgHlzBxI-ZIV7mvt_20cyUhTtOHR16ybfCs2TcmHdj55R17IH9_p7Pf7xI4IEknROjh0Z8a4Mcmu7CdpuAX0lKXCsPEbCTKImTXoDuoUWiBbf-skWYi4bzPksTMrXDRN91R7BCScFnmIUMSrcQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-spacing-3xs">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono">Actualités Projets</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• V1.2</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold truncate mt-0.5" title="Avancement des travaux de l'axe routier PK12 - Ntoum : 85% achevé">Avancement des travaux de l'axe routier PK12 - Ntoum : 85% achevé</h4>
+<div class="flex items-center gap-spacing-2xs text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Modifié il y a 14 min par <strong>Diane M.</strong></span>
+</div>
+</div>
+</div>
+<!-- Bilinguisme -->
+<div class="col-span-2 flex flex-col items-center gap-spacing-4xs">
+<div class="flex items-center gap-1">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">FR 100%</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-error-container text-error font-label-mono text-label-mono font-bold">EN 0%</span>
+</div>
+<button class="font-label-mono text-label-mono text-secondary-container hover:text-secondary flex items-center gap-0.5" onclick="triggerTranslateHelper()">
+<span class="material-symbols-outlined text-[13px]">add_circle</span> Compléter EN
+              </button>
+</div>
+<!-- Statut -->
+<div class="col-span-2 flex flex-col items-center">
+<span class="px-spacing-2xs py-spacing-4xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-mono text-label-mono flex items-center gap-1.5 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+                Brouillon éditeur
+              </span>
+<span class="font-label-mono text-label-mono text-on-surface-variant mt-1">Non soumis</span>
+</div>
+<!-- Actions Directes -->
+<div class="col-span-3 flex items-center justify-end gap-spacing-2xs">
+<button class="p-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all flex items-center gap-1 font-label-md text-label-md px-spacing-xs shadow-sm" onclick="document.getElementById('editorDrawer').classList.remove('hidden')" title="Ouvrir le traitement de texte Word">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Éditer</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors" title="Prévisualiser le rendu final">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors" title="Dupliquer cet article">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Ligne 2 -->
+<div class="grid grid-cols-12 px-spacing-sm py-spacing-sm items-center hover:bg-surface-container-low transition-colors">
+<div class="col-span-5 flex items-start gap-spacing-xs">
+<div class="w-14 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high shadow-xs mt-1">
+<img class="w-full h-full object-cover" data-alt="Cérémonie de remise de bourses et d'équipements de sécurité pour de jeunes ingénieurs gabonais dans le secteur des ponts et chaussées au siège de CITP Gabon à Libreville" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlr5gbg1N6sK-Oc8FooA0phBD4Awx1bZxZ2r8Qc6RsPUZFHqSGzHqsgUD7025QHMi19F2TwORy1KgRMK2aqkLD8s1d66Sv3Rr--THfW2Sxdf-pzsALpss_Zx0Wioa4i6fDbG6QfSs7erSqpENuZB4sYxnhoScZl-W651i7HJP7lLKJwosUzgrEw7QcrZCq4BkWBsko3ofHwTMlOT95xbVssuxq8aHBuYoFFRoE5X3VJ66c07H86gYcDg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-spacing-3xs">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono">RSE &amp; Environnement</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• V2.0</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold truncate mt-0.5" title="Programme Génération BTP : Remise de 45 bourses aux techniciens gabonais">Programme Génération BTP : Remise de 45 bourses aux techniciens gabonais</h4>
+<div class="flex items-center gap-spacing-2xs text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Transmis hier à 16:20 par <strong>Diane M.</strong></span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-spacing-4xs">
+<div class="flex items-center gap-1">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">FR 100%</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">EN 100%</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Conforme</span>
+</div>
+<div class="col-span-2 flex flex-col items-center">
+<span class="px-spacing-2xs py-spacing-4xs rounded-full bg-surface-container-high text-on-surface font-label-mono text-label-mono flex items-center gap-1.5 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">mark_email_read</span>
+                Chez le Validateur
+              </span>
+<span class="font-label-mono text-label-mono text-on-surface-variant mt-1">Dir. Communication</span>
+</div>
+<div class="col-span-3 flex items-center justify-end gap-spacing-2xs">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors font-label-md text-label-md px-spacing-xs flex items-center gap-1" onclick="document.getElementById('editorDrawer').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Consulter</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors" title="Historique d'approbation">
+<span class="material-symbols-outlined text-[16px]">history</span>
+</button>
+</div>
+</div>
+<!-- Ligne 3 -->
+<div class="grid grid-cols-12 px-spacing-sm py-spacing-sm items-center hover:bg-surface-container-low transition-colors">
+<div class="col-span-5 flex items-start gap-spacing-xs">
+<div class="w-14 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high shadow-xs mt-1">
+<img class="w-full h-full object-cover" data-alt="Signature d'un protocole d'accord officiel entre les dirigeants de CITP Gabon et les représentants des bailleurs internationaux dans une salle de conférence institutionnelle contemporaine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMI75Kf45pRtJhI-4SZlaSky9mppLOYSsIr9dboyGjWfL66qoUKktTobSiycvzq8hG6eMekumI2NnlMkYOSKfSdYCtrlQ6zbppxJVq3u2CF_TyYtwU7DfyL9i4R_K1st6ruHdcFJ6lSVzIWvPB2IgUCUyvN34cqLuVgmYR92EKXyihpwgnSnjuy2X2y2isstNa5SPLEp2EE4PBKJBGA5xM7I7OojdJwOPRYaPCNHF8QUNL38qkhvDTxg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-spacing-3xs">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono">Communiqués</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• V3.1</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold truncate mt-0.5" title="Partenariat stratégique pour la réhabilitation des quais maritimes de Port-Gentil">Partenariat stratégique pour la réhabilitation des quais maritimes de Port-Gentil</h4>
+<div class="flex items-center gap-spacing-2xs text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Publié le 12 Fév 2025</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-spacing-4xs">
+<div class="flex items-center gap-1">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">FR</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">EN</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Actif en ligne</span>
+</div>
+<div class="col-span-2 flex flex-col items-center">
+<span class="px-spacing-2xs py-spacing-4xs rounded-full bg-surface-container-highest text-primary font-label-mono text-label-mono flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Publié &amp; Indexé
+              </span>
+<span class="font-label-mono text-label-mono text-on-surface-variant mt-1">Portail Public</span>
+</div>
+<div class="col-span-3 flex items-center justify-end gap-spacing-2xs">
+<a class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors font-label-md text-label-md px-spacing-xs flex items-center gap-1" href="#" target="_blank">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Voir sur site</span>
+</a>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors" onclick="document.getElementById('editorDrawer').classList.remove('hidden')" title="Créer un modificatif">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Ligne 4 -->
+<div class="grid grid-cols-12 px-spacing-sm py-spacing-sm items-center hover:bg-surface-container-low transition-colors">
+<div class="col-span-5 flex items-start gap-spacing-xs">
+<div class="w-14 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high shadow-xs mt-1">
+<img class="w-full h-full object-cover" data-alt="Photographie de groupe des équipes techniques CITP Gabon célébrant les 2 millions d'heures sans accident sur les chantiers de la Ngounié avec banderole de sécurité industrielle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsKPHCH4FH3pxw4jeg4LgVZQZ6wRHsaDvCvogy5eG4mniLfTkw0f8l1V0tLQQRkCJkzhdIBzC4_JHM0Ovwt8Pq8oLCjJr43FArZbjMn0oWQ9Got8IZa1QdhWiY25yTxQB8FV8kkVqgMT4j0LSZrGSijs2mWtsPHTDarwy1mbPRv9B9y1Th8tsdzl83y29k74iqELo6G_3gaRsyltz0Mr3Icc8-BCfdKFmRceaGDHIN5x1B0-Q8djaSaQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-spacing-3xs">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-container-high text-primary font-label-mono text-label-mono">Vie de l'Entreprise</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• V1.0</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold truncate mt-0.5" title="Sécurité Zéro Incident : Bilan semestriel exemplaire pour nos brigades Sud">Sécurité Zéro Incident : Bilan semestriel exemplaire pour nos brigades Sud</h4>
+<div class="flex items-center gap-spacing-2xs text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Créé il y a 3 jours</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-spacing-4xs">
+<div class="flex items-center gap-1">
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">FR 100%</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-error-container text-error font-label-mono text-label-mono font-bold">EN 0%</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">À traduire</span>
+</div>
+<div class="col-span-2 flex flex-col items-center">
+<span class="px-spacing-2xs py-spacing-4xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-mono text-label-mono flex items-center gap-1.5 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                Brouillon
+              </span>
+<span class="font-label-mono text-label-mono text-on-surface-variant mt-1">Interne</span>
+</div>
+<div class="col-span-3 flex items-center justify-end gap-spacing-2xs">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors font-label-md text-label-md px-spacing-xs flex items-center gap-1" onclick="document.getElementById('editorDrawer').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Reprendre</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-colors" title="Supprimer le brouillon">
+<span class="material-symbols-outlined text-[16px] text-error">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination Simple Accessible -->
+<div class="flex items-center justify-between px-spacing-xs py-spacing-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Affichage de 4 articles sur 24 au total</span>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded bg-surface-container-high text-on-surface disabled:opacity-50" disabled=""><span class="material-symbols-outlined text-[18px]">chevron_left</span></button>
+<span class="px-spacing-xs py-0.5 rounded bg-primary-container text-on-primary font-label-mono text-label-mono">1</span>
+<button class="px-spacing-xs py-0.5 rounded hover:bg-surface-container-high text-on-surface font-label-mono text-label-mono">2</button>
+<button class="px-spacing-xs py-0.5 rounded hover:bg-surface-container-high text-on-surface font-label-mono text-label-mono">3</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+</div>
+</div>
+</div>
+<!-- Colonne Droite : Modèles Rapides, Conseils Rédaction & Workflow (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-spacing-md">
+<!-- Boîte de démarrage rapide : Nouveaux Modèles -->
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-secondary-container">auto_stories</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Modèles Rédactionnels Prêts</h3>
+</div>
+<span class="font-label-mono text-label-mono px-spacing-3xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant">Gain de temps</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Démarrez un article avec une structure préformatée type communiqué de presse ou rapport de chantier.</p>
+<div class="flex flex-col gap-spacing-2xs mt-spacing-2xs">
+<button class="p-spacing-xs rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors flex items-center justify-between group" onclick="document.getElementById('editorDrawer').classList.remove('hidden')">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold group-hover:text-secondary-container transition-colors">Point Étape Chantier</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Photos avant/après + Chiffres clés</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">add</span>
+</button>
+<button class="p-spacing-xs rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors flex items-center justify-between group" onclick="document.getElementById('editorDrawer').classList.remove('hidden')">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold group-hover:text-secondary-container transition-colors">Communiqué Ministériel</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Citation DG + Encart officiel</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">add</span>
+</button>
+<button class="p-spacing-xs rounded-xl bg-surface-container-low hover:bg-surface-container text-left transition-colors flex items-center justify-between group" onclick="document.getElementById('editorDrawer').classList.remove('hidden')">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold group-hover:text-secondary-container transition-colors">Action Sociale &amp; RSE</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Impact local + Témoignages</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Guide 'Éditer en toute sérénité' -->
+<div class="bg-surface-container-high p-spacing-sm rounded-xl shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-center gap-spacing-2xs text-primary">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+<h4 class="font-title-md text-title-md font-bold">Astuces de l'Éditeur CITP</h4>
+</div>
+<ul class="flex flex-col gap-spacing-2xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-spacing-2xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-container mt-0.5">check_circle</span>
+<span><strong>Pas de balises techniques :</strong> Collez directement votre texte depuis Microsoft Word, les styles sont harmonisés automatiquement.</span>
+</li>
+<li class="flex items-start gap-spacing-2xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-container mt-0.5">check_circle</span>
+<span><strong>Médiathèque liée :</strong> Vos images haute résolution sont automatiquement compressées pour les réseaux mobiles 3G/4G au Gabon.</span>
+</li>
+<li class="flex items-start gap-spacing-2xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-container mt-0.5">check_circle</span>
+<span><strong>Traductions synchrones :</strong> Vous pouvez demander une ébauche automatique pour la version anglophone avant soumission.</span>
+</li>
+</ul>
+</div>
+<!-- Statut du Stockage Supabase Cloud -->
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">Synchronisation Live</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Brouillons sécurisés en temps réel</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- VOLET D'ÉDITION INTERACTIVE AVANCÉ (Module Word WYSIWYG & Bilingue)        -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 flex justify-end bg-inverse-surface/60 backdrop-blur-xs transition-opacity duration-300" id="editorDrawer">
+<!-- Conteneur Panneau Coulissant Pleine Largeur Rédacteur (Max 1200px) -->
+<div class="w-full max-w-[1240px] h-full bg-surface-container-lowest shadow-2xl flex flex-col overflow-hidden">
+<!-- Barre d'En-Tête Volet Édition -->
+<div class="px-spacing-md py-spacing-xs bg-surface-container-low flex flex-wrap items-center justify-between gap-spacing-sm shrink-0">
+<!-- Titre & Info Sauvegarde -->
+<div class="flex items-center gap-spacing-sm">
+<button class="p-1.5 rounded-lg hover:bg-surface-container-high text-on-surface transition-colors" onclick="document.getElementById('editorDrawer').classList.add('hidden')" title="Fermer l'éditeur">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-2xs">
+<span class="font-headline-sm text-headline-sm text-primary">Éditeur d'Article</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-secondary-fixed text-on-secondary-fixed font-label-mono text-label-mono font-bold">MODE BROUILLON</span>
+</div>
+<div class="flex items-center gap-spacing-3xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[14px] text-primary">cloud_done</span>
+<span id="saveStatus">Sauvegardé automatiquement il y a 12 secondes</span>
+</div>
+</div>
+</div>
+<!-- Actions Principales : Aperçu et Envoi Validation -->
+<div class="flex items-center gap-spacing-2xs">
+<button class="px-spacing-xs py-spacing-2xs rounded-lg bg-surface-container-highest hover:bg-surface-variant text-primary font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Aperçu en direct (Site Public)</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md flex items-center gap-1.5 shadow-md hover:shadow-lg transition-all" id="btnSubmitApproval" onclick="submitArticleWorkflow()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Envoyer pour validation</span>
+</button>
+</div>
+</div>
+<!-- Onglets Bilingues Haut de Traitement -->
+<div class="px-spacing-md pt-spacing-2xs bg-surface-container-lowest flex items-center justify-between shrink-0">
+<div class="flex items-center gap-spacing-xs">
+<button class="px-spacing-sm py-spacing-2xs border-b-2 border-primary-container text-primary font-title-md text-title-md flex items-center gap-2" id="tabFR" onclick="switchLanguage('FR')">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant font-label-mono text-label-mono">FR</span>
+<span>Version Française (Active)</span>
+</button>
+<button class="px-spacing-sm py-spacing-2xs text-on-surface-variant hover:text-on-surface font-title-md text-title-md flex items-center gap-2" id="tabEN" onclick="switchLanguage('EN')">
+<span class="px-1.5 py-0.5 rounded bg-error-container text-error font-label-mono text-label-mono font-bold">EN</span>
+<span>English Version</span>
+<span class="w-2 h-2 rounded-full bg-error" title="Traduction requise avant publication"></span>
+</button>
+</div>
+<!-- Sélecteur de Rubrique -->
+<div class="flex items-center gap-spacing-2xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Rubrique :</label>
+<select class="px-spacing-xs py-1 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm outline-none cursor-pointer font-bold">
+<option selected="">Actualités Projets</option>
+<option>RSE &amp; Environnement</option>
+<option>Communiqués Officiels</option>
+<option>Presse &amp; Médias</option>
+<option>Vie de l'Entreprise</option>
+</select>
+</div>
+</div>
+<!-- BARRE D'OUTILS STYLE MICROSOFT WORD (WYSIWYG Intuitif) -->
+<div class="px-spacing-md py-spacing-2xs bg-surface-container-low flex flex-wrap items-center gap-spacing-2xs shrink-0 shadow-xs">
+<!-- Style Titre -->
+<select class="px-spacing-2xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md outline-none cursor-pointer" onchange="formatDoc('formatBlock', this.value); this.selectedIndex=0;">
+<option value="">Style de texte</option>
+<option value="H1">Grand Titre (H1)</option>
+<option value="H2">Sous-Titre Majeur (H2)</option>
+<option value="H3">Intertitre Section (H3)</option>
+<option value="P">Paragraphe normal</option>
+</select>
+<div class="w-px h-5 bg-outline-variant mx-1"></div>
+<!-- Typo : Gras, Italique, Souligné -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-0.5">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface font-bold text-sm w-7 h-7 flex items-center justify-center" onclick="formatDoc('bold')" title="Gras (Ctrl+B)">G</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface italic text-sm w-7 h-7 flex items-center justify-center" onclick="formatDoc('italic')" title="Italique (Ctrl+I)">I</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface underline text-sm w-7 h-7 flex items-center justify-center" onclick="formatDoc('underline')" title="Souligné">S</button>
+</div>
+<div class="w-px h-5 bg-outline-variant mx-1"></div>
+<!-- Alignement & Listes -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-0.5">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface w-7 h-7 flex items-center justify-center" onclick="formatDoc('justifyLeft')" title="Aligner à gauche"><span class="material-symbols-outlined text-[16px]">format_align_left</span></button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface w-7 h-7 flex items-center justify-center" onclick="formatDoc('justifyCenter')" title="Centrer"><span class="material-symbols-outlined text-[16px]">format_align_center</span></button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface w-7 h-7 flex items-center justify-center" onclick="formatDoc('insertUnorderedList')" title="Liste à puces"><span class="material-symbols-outlined text-[16px]">format_list_bulleted</span></button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface w-7 h-7 flex items-center justify-center" onclick="formatDoc('insertOrderedList')" title="Liste numérotée"><span class="material-symbols-outlined text-[16px]">format_list_numbered</span></button>
+</div>
+<div class="w-px h-5 bg-outline-variant mx-1"></div>
+<!-- Éléments complexes simplifiés -->
+<div class="flex items-center gap-1">
+<button class="px-spacing-2xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1" onclick="formatDoc('formatBlock', 'BLOCKQUOTE')" title="Insérer une citation d'autorité">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">format_quote</span>
+<span>Citation</span>
+</button>
+<button class="px-spacing-2xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1" onclick="insertImagePrompt()" title="Insérer une photo de chantier">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">add_photo_alternate</span>
+<span>Insérer Photo</span>
+</button>
+<button class="px-spacing-2xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1" onclick="insertTableSim()" title="Insérer un tableau de chiffres">
+<span class="material-symbols-outlined text-[16px]">table_chart</span>
+<span>Tableau</span>
+</button>
+<button class="px-spacing-2xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1" onclick="insertLinkPrompt()" title="Ajouter un lien web">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>Lien</span>
+</button>
+</div>
+<div class="w-px h-5 bg-outline-variant mx-1"></div>
+<!-- Annuler / Rétablir -->
+<div class="flex items-center gap-0.5">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface w-7 h-7 flex items-center justify-center" onclick="formatDoc('undo')" title="Annuler (Ctrl+Z)"><span class="material-symbols-outlined text-[16px]">undo</span></button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface w-7 h-7 flex items-center justify-center" onclick="formatDoc('redo')" title="Rétablir"><span class="material-symbols-outlined text-[16px]">redo</span></button>
+</div>
+</div>
+<!-- Corps du Panneau : Zone d'Écriture (Gauche) & Colonne Paramètres/Médias (Droite) -->
+<div class="flex-1 overflow-y-auto p-spacing-md bg-surface flex flex-col xl:flex-row gap-spacing-md">
+<!-- Colonne Document 'Style Feuille Word' -->
+<div class="flex-1 bg-surface-container-lowest p-spacing-lg rounded-xl shadow-md flex flex-col gap-spacing-md min-h-[700px]">
+<!-- Titre Principal de l'article -->
+<div class="flex flex-col gap-spacing-3xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Titre de l'Article (Visible sur le portail public et Google)</label>
+<input class="w-full text-headline-md font-headline-md text-primary bg-transparent outline-none border-b-2 border-transparent focus:border-secondary-container transition-all py-1" id="articleTitleInput" placeholder="Tapez ici le titre complet de votre article..." type="text" value="Avancement des travaux de l'axe routier PK12 - Ntoum : 85% achevé"/>
+</div>
+<!-- Avertissement de Traduction Anglaise (Caché par défaut ou affiché lors du basculement) -->
+<div class="hidden bg-error-container text-on-error-container p-spacing-xs rounded-lg flex items-center justify-between" id="enNotice">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span class="font-body-sm text-body-sm">Attention : La version anglophone est encore vide. Souhaitez-vous générer une traduction préliminaire à partir du français ?</span>
+</div>
+<button class="px-spacing-xs py-1 rounded bg-error text-on-error font-label-md text-label-md shrink-0" onclick="autoTranslateSim()">Traduire automatiquement</button>
+</div>
+<!-- Zone Corps d'Édition Rich-Text (contenteditable direct) -->
+<div class="outline-none font-body-lg text-body-lg text-on-surface min-h-[480px] leading-relaxed flex flex-col gap-spacing-sm" contenteditable="true" id="editorContent">
+<p class="font-title-md text-title-md text-primary-container font-semibold">
+              Les équipes de génie civil de CITP Gabon franchissent une étape décisive dans la modernisation des corridors logistiques de la province de l'Estuaire.
+            </p>
+<p>
+              Lancés dans le cadre du Plan Stratégique National des Transports, les travaux d'élargissement et de bitumage à haute résistance de la section <strong>PK12 - Ntoum</strong> enregistrent désormais un taux d'avancement certifié de <strong>85%</strong>. Les terrassements lourds ainsi que les ouvrages d'art d'évacuation hydraulique ont été validés par les bureaux de contrôle indépendants.
+            </p>
+<!-- Simulation d'une photo insérée dans le document -->
+<div class="my-spacing-xs p-spacing-2xs bg-surface-container-low rounded-xl shadow-xs flex flex-col gap-spacing-3xs select-none">
+<div class="h-64 w-full rounded-lg overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Engins de chantier CITP Gabon procédant à la pose d'enrobé bitumineux chaud sur une route à quatre voies à Ntoum sous le soleil tropical avec géomètres en équipement fluorescent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5628aMmbm5AsIkV2Ohx7KNMH4zppvvGYttZS-AW6cNqALErz2aOo_Jkkavnns9XTmm31FkPb1aV3ZqHtSr2nepSSPbRwRnZasceebk0becXuXn_jCq-erAACTBxQPGVjFn0YU2u_TLwSOXFRt87HBYOJCKHUSFK912eGms4RyeP6WxJVjUQYNEF-db2aknLXJhqw20uErQkFSkNFtZuusSvDQXGDRYJOeuDqS9Yrxaan5uuaR6N_ZVg"/>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm px-1">
+<span class="italic">Figure 1 : Pose du tapis d'enrobé haute température au PK18 - Brigade Sud CITP.</span>
+<span class="font-label-mono text-label-mono text-primary bg-surface-variant px-1.5 py-0.5 rounded">Médiathèque CITP #IMG-4491</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-spacing-xs">
+              Rigueur environnementale et respect des normes CEMAC
+            </h3>
+<p>
+              Conformément à la politique RSE stricte de CITP Gabon, la revégétalisation systématique des talus et la sécurisation des traversées piétonnes ont été intégrées directement au calendrier d'exécution, garantissant ainsi un chantier à impact positif pour les populations riveraines.
+            </p>
+<blockquote class="border-l-4 border-secondary-container pl-spacing-sm py-spacing-3xs italic text-on-surface-variant bg-surface-container-low rounded-r-lg font-body-md text-body-md">
+              « Cet axe est l'artère vitale de notre approvisionnement. La mobilisation de nos 140 collaborateurs sur site garantit une livraison finale avant le début de la prochaine saison des pluies. » — <strong>Direction des Travaux Publics</strong>
+</blockquote>
+</div>
+<!-- Compteur de mots / Temps de lecture -->
+<div class="flex items-center justify-between pt-spacing-sm text-on-surface-variant font-label-mono text-label-mono">
+<span>Mots : <strong>238</strong> • Caractères : <strong>1 540</strong></span>
+<span>Temps de lecture estimé : <strong>1 min 30 s</strong></span>
+</div>
+</div>
+<!-- Colonne Latérale Outils Éditeur : Image à la une, Historique & Workflow -->
+<div class="w-full xl:w-[340px] flex flex-col gap-spacing-sm shrink-0">
+<!-- Image à la Une (Couverture) -->
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Image à la Une</span>
+<span class="material-symbols-outlined text-primary text-[18px]">photo_camera</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cette image apparaîtra en tête de l'article et lors des partages sur LinkedIn et WhatsApp.</p>
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-high h-40">
+<img class="w-full h-full object-cover" data-alt="Chantier d'ingénierie routière CITP Gabon avec pont en béton précontraint et grues industrielles au coucher du soleil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFGX0xT-jmPMuv43PTcA6R6EjZBKKdrnH-ZOgTFdkcClMOJVr4VV2sq-IS4iZJFSjFzD8xWIsKslghU47J2HseARPZxENlIE_wDuC2BgY8feS3UzA3c2qj_CRRORbwO5Ty0oRbuUG0dz4aZTlwEuNyX-63ITL406LFwDcHGQBmlb6jjgW1PN91a5q52rHAKblVpz8Udf2LctF5dgsRKMu00H08kD-V1uODd7IqSHbYuRjl1vyb6Oy4mQ"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity gap-spacing-xs">
+<button class="px-spacing-xs py-1 rounded bg-surface-container-lowest text-primary font-label-md text-label-md shadow-md">Changer</button>
+<button class="p-1 rounded bg-error text-on-error shadow-md"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container hover:bg-surface-variant text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">collections</span>
+<span>Choisir dans la Médiathèque Terrain</span>
+</button>
+</div>
+<!-- Date & Programmation -->
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex flex-col gap-spacing-xs">
+<span class="font-title-md text-title-md text-primary font-bold">Planification de parution</span>
+<div class="flex flex-col gap-spacing-3xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Date de publication souhaitée</label>
+<input class="px-spacing-xs py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none" type="datetime-local" value="2025-02-18T09:00"/>
+</div>
+<label class="flex items-center gap-spacing-2xs cursor-pointer mt-1">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Épingler en 'Une' du portail (Top 3)</span>
+</label>
+</div>
+<!-- Historique des Versions (Restauration en 1 clic) -->
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Historique des versions</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">history</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Restaurer un état antérieur en un seul clic en cas d'erreur de rédaction.</p>
+<div class="flex flex-col gap-spacing-2xs mt-1">
+<!-- Version Actuelle -->
+<div class="p-spacing-2xs rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">V1.2 (Version Actuelle)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Aujourd'hui à 11:42 • Diane M.</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold">En cours</span>
+</div>
+<!-- Version Antérieure V1.1 -->
+<div class="p-spacing-2xs rounded-lg hover:bg-surface-container-low flex items-center justify-between transition-colors group">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">V1.1</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Hier à 17:15 • Diane M.</span>
+</div>
+<button class="opacity-0 group-hover:opacity-100 px-spacing-xs py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-mono text-label-mono transition-all" onclick="restoreVersionSim('V1.1')">
+                  Restaurer
+                </button>
+</div>
+<!-- Version Initiale V1.0 -->
+<div class="p-spacing-2xs rounded-lg hover:bg-surface-container-low flex items-center justify-between transition-colors group">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">V1.0 (Création)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">14 Fév 2025 • Modèle Chantier</span>
+</div>
+<button class="opacity-0 group-hover:opacity-100 px-spacing-xs py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-mono text-label-mono transition-all" onclick="restoreVersionSim('V1.0')">
+                  Restaurer
+                </button>
+</div>
+</div>
+</div>
+<!-- Note au Validateur -->
+<div class="bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm flex flex-col gap-spacing-3xs">
+<span class="font-title-md text-title-md text-primary font-bold">Note interne pour le Validateur</span>
+<textarea class="w-full p-spacing-2xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none resize-none" placeholder="Ex: 'Données métriques validées par le Chef de Brigade M. Obiang, prêt pour diffusion.'" rows="2"></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Confirmation Envoi Validation -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-xs hidden" id="confirmModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full mx-4 p-spacing-md shadow-2xl flex flex-col gap-spacing-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">mark_email_read</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">Transmettre au Validateur ?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">L'article passera sous le statut <strong>'Chez le Validateur'</strong>. La Direction de la Communication recevra une alerte immédiate pour accord et publication en 1 clic.</p>
+</div>
+<div class="flex items-center justify-end gap-spacing-xs pt-spacing-2xs">
+<button class="px-spacing-xs py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="document.getElementById('confirmModal').classList.add('hidden')">Continuer la rédaction</button>
+<button class="px-spacing-md py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-md" onclick="finalizeSubmission()">Confirmer la soumission</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Rédacteur -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary text-on-primary px-spacing-md py-spacing-xs rounded-xl shadow-2xl flex items-center gap-spacing-xs transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastAlert">
+<span class="material-symbols-outlined text-secondary-container" id="toastIcon">check_circle</span>
+<span class="font-body-md text-body-md" id="toastMsg">Action exécutée avec succès.</span>
+</div>
+<!-- Logique de Micro-Interactions Client -->
+<script>
+    function formatDoc(cmd, value = null) {
+      document.execCommand(cmd, false, value);
+      document.getElementById('editorContent').focus();
+      triggerAutoSave();
+    }
+
+    function insertLinkPrompt() {
+      const url = prompt('Entrez l\'adresse web (URL) :', 'https://');
+      if (url) {
+        formatDoc('createLink', url);
+      }
+    }
+
+    function insertImagePrompt() {
+      showToast("Médiathèque ouverte : image sélectionnée insérée", "add_photo_alternate");
+    }
+
+    function insertTableSim() {
+      const tableHtml = '<table class="w-full my-3 border-collapse bg-surface-container-low rounded-lg overflow-hidden font-body-sm text-body-sm"><tr class="bg-surface-container-high font-bold text-primary"><th class="p-2 text-left">Poste de Travaux</th><th class="p-2 text-left">Progression</th><th class="p-2 text-left">Statut</th></tr><tr><td class="p-2">Terrassement PK12-18</td><td class="p-2">100%</td><td class="p-2 text-primary font-bold">Achevé</td></tr><tr><td class="p-2">Pose d\'enrobé chaud</td><td class="p-2">85%</td><td class="p-2 text-secondary-container font-bold">En cours</td></tr></table><p></p>';
+      document.execCommand('insertHTML', false, tableHtml);
+      triggerAutoSave();
+    }
+
+    let saveTimer;
+    function triggerAutoSave() {
+      const status = document.getElementById('saveStatus');
+      if (!status) return;
+      status.innerText = "Sauvegarde en cours sur Supabase...";
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => {
+        status.innerText = "Sauvegardé automatiquement à l'instant";
+      }, 900);
+    }
+
+    function switchLanguage(lang) {
+      const tabFR = document.getElementById('tabFR');
+      const tabEN = document.getElementById('tabEN');
+      const enNotice = document.getElementById('enNotice');
+      const titleInput = document.getElementById('articleTitleInput');
+
+      if (lang === 'EN') {
+        tabFR.className = "px-spacing-sm py-spacing-2xs text-on-surface-variant hover:text-on-surface font-title-md text-title-md flex items-center gap-2";
+        tabEN.className = "px-spacing-sm py-spacing-2xs border-b-2 border-error text-primary font-title-md text-title-md flex items-center gap-2";
+        enNotice.classList.remove('hidden');
+        titleInput.value = "[EN Translating] Progress of road works on the PK12 - Ntoum corridor";
+      } else {
+        tabEN.className = "px-spacing-sm py-spacing-2xs text-on-surface-variant hover:text-on-surface font-title-md text-title-md flex items-center gap-2";
+        tabFR.className = "px-spacing-sm py-spacing-2xs border-b-2 border-primary-container text-primary font-title-md text-title-md flex items-center gap-2";
+        enNotice.classList.add('hidden');
+        titleInput.value = "Avancement des travaux de l'axe routier PK12 - Ntoum : 85% achevé";
+      }
+    }
+
+    function autoTranslateSim() {
+      document.getElementById('enNotice').classList.add('hidden');
+      showToast("Traduction automatique appliquée ! Vous pouvez affiner le texte.", "translate");
+    }
+
+    function restoreVersionSim(ver) {
+      showToast(`Version ${ver} restaurée avec succès dans l'éditeur.`, "history");
+      triggerAutoSave();
+    }
+
+    function submitArticleWorkflow() {
+      document.getElementById('confirmModal').classList.remove('hidden');
+    }
+
+    function finalizeSubmission() {
+      document.getElementById('confirmModal').classList.add('hidden');
+      document.getElementById('editorDrawer').classList.add('hidden');
+      showToast("Article transmis à la Direction avec notification par email.", "send");
+    }
+
+    function triggerTranslateHelper() {
+      document.getElementById('editorDrawer').classList.remove('hidden');
+      switchLanguage('EN');
+    }
+
+    function showToast(msg, icon = "check_circle") {
+      const toast = document.getElementById('toastAlert');
+      const toastMsg = document.getElementById('toastMsg');
+      const toastIcon = document.getElementById('toastIcon');
+      
+      toastMsg.innerText = msg;
+      toastIcon.innerText = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 4000);
+    }
+
+    document.getElementById('btnOpenNewModal').addEventListener('click', () => {
+      document.getElementById('editorDrawer').classList.remove('hidden');
+      switchLanguage('FR');
+    });
+
+    document.getElementById('btnQuickTour').addEventListener('click', () => {
+      showToast("Lancement de la visite guidée : 'Rédiger en 3 clics'", "school");
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high py-spacing-xs px-spacing-md text-on-surface-variant text-body-sm font-body-sm flex flex-wrap items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schema</span><span class="font-label-md text-label-md text-on-surface">Workflow institutionnel :</span><span class="font-body-sm text-body-sm text-on-surface-variant">Brouillon ➔ En relecture ➔ Publication officielle par un Validateur</span></div><div class="flex items-center gap-spacing-md text-body-sm font-body-sm"><span>Besoin d'aide ? Tél : <strong>+241 01 76 00 00</strong></span><span>Support DSI CITP Gabon • v2.4</span></div></footer></div></body></html>

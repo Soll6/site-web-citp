@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>CITP Gabon - Back-Office Administration</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7c97ef","surface":"#faf8ff","on-primary":"#ffffff","on-tertiary-fixed":"#001e2d","primary-container":"#002b7f","on-tertiary-fixed-variant":"#004c6b","inverse-on-surface":"#eef0ff","on-primary-fixed":"#00174c","inverse-surface":"#283044","on-tertiary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","outline-variant":"#c4c6d3","on-surface-variant":"#444651","on-surface":"#131b2e","primary-fixed-dim":"#b5c4ff","on-secondary-fixed":"#2c1600","tertiary":"#002131","outline":"#747683","primary-fixed":"#dbe1ff","tertiary-container":"#00374f","secondary":"#8a5100","secondary-fixed-dim":"#ffb86e","secondary-container":"#fc9910","on-error-container":"#93000a","error":"#ba1a1a","background":"#faf8ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#0ea6e3","on-error":"#ffffff","surface-tint":"#3d5aad","surface-variant":"#dae2fd","tertiary-fixed":"#c6e7ff","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","inverse-primary":"#b5c4ff","on-secondary-container":"#643900","tertiary-fixed-dim":"#81cfff","error-container":"#ffdad6","primary":"#001851","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-secondary-fixed-variant":"#693c00","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#224194","secondary-fixed":"#ffdcbd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"spacing-md":"1.5rem","gutter-desktop":"1.5rem","spacing-3xs":"0.25rem","spacing-2xs":"0.5rem","spacing-lg":"2rem","spacing-3xl":"6rem","spacing-xl":"3rem","gutter-mobile":"1rem","spacing-xs":"0.75rem","spacing-sm":"1rem","spacing-4xs":"0.125rem","container-max":"1280px","spacing-2xl":"4rem"},"fontFamily":{"label-md":["Inter"],"label-mono":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"16px","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-spacing-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-spacing-xs"><img alt="citp-logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL0dcbRRgY7SsdwPT7sYO-pdOf_JRWsY9Vou8xiXpMa26-hBwXVXIR4OjvVZRyhtogBqvEWb2e0U_qUE0EvxHJMlMQ-4bC-gUmtLkQLNfrSvNJWF1RkUgQMbCuqsOi5FlkYccQESfLaWTJWUrHwifDKCHWBE__Cc5ozVEZQFc6X4qjXcDbQ3ZFjE2ZIBQ80cBwC62EdvmeyUDciUkdXVsa-jbmny9LevKs5O1oA0vg8haN7CTEppTpPyu20pq04PQUgroTWqIhnT8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CITP Gabon</span><span class="font-label-mono text-label-mono text-secondary">ESPACE ÉDITION</span></div></div></div><div class="px-spacing-md py-spacing-xs bg-surface-container-low mx-spacing-xs mt-spacing-xs rounded-xl flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span><div class="flex flex-col"><span class="font-label-mono text-label-mono text-on-surface">Éditer comme dans Word</span><span class="font-body-sm text-body-sm text-on-surface-variant">Publier en 1 clic</span></div></div><nav class="flex flex-col gap-spacing-4xs px-spacing-xs mt-spacing-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Section Principale</span><a aria-current="page" class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl transition-colors bg-primary-container text-on-primary font-bold" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-title-md text-title-md">Tableau de bord</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mes-contenus-articles" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-title-md text-title-md">Mes Contenus &amp; Articles</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="fiches-chantiers-realisations" href="#"><span class="material-symbols-outlined text-[20px]">engineering</span><span class="font-title-md text-title-md">Fiches Chantiers &amp; Projets</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Médias &amp; Ressources</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mediatheque-terrain" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-title-md text-title-md">Médiathèque Terrain</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bannieres-alertes-info" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-md text-title-md">Bannières &amp; Alertes Info</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Suivi &amp; Interactions</span><a class="flex items-center justify-between px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="boite-de-reception" href="#"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-title-md text-title-md">Boîte de réception</span></div><span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono">3</span></a></nav></div><div class="flex flex-col gap-spacing-4xs px-spacing-xs pb-spacing-sm pt-spacing-xs border-t border-surface-container-high"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Assistance &amp; Paramètres</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="guide-videos-aide" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary-container">help_outline</span><span class="font-title-md text-title-md">Guide &amp; Tutoriels Vidéo</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="parametres-session" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Paramètres de session</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-title-md text-title-md">Déconnexion</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-spacing-md"><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-2xs bg-surface-container px-spacing-xs py-spacing-3xs rounded-xl"><span class="font-label-md text-label-md text-primary font-bold">Back-Office Édition</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-high text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-mono text-label-mono">Rôle : Éditeur (Brouillons &amp; Contenus)</span></div><div class="hidden xl:flex items-center gap-spacing-3xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[18px]">cloud_done</span><span>Sauvegardé automatiquement (Supabase)</span></div></div><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-xs py-spacing-3xs rounded-xl"><button class="px-spacing-2xs py-spacing-4xs rounded-lg bg-primary-container text-on-primary font-label-mono text-label-mono">FR</button><button class="px-spacing-2xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono relative flex items-center gap-1">EN <span class="w-1.5 h-1.5 rounded-full bg-secondary-container" title="Traductions partielles"></span></button></div><a class="flex items-center gap-spacing-3xs text-primary hover:text-primary-container font-label-md text-label-md bg-surface-container px-spacing-xs py-spacing-2xs rounded-xl transition-colors" href="#" target="_blank"><span class="material-symbols-outlined text-[18px]">open_in_new</span><span class="hidden lg:inline">Voir le site public</span></a><button class="relative p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-spacing-xs pl-spacing-xs border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Diane M.</span><span class="font-label-mono text-label-mono text-on-surface-variant leading-tight">Chargée de Com &amp; Dir.</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="p-spacing-md lg:p-spacing-lg flex flex-col gap-spacing-md max-w-[1520px] mx-auto w-full">
+<!-- Header Institutionnel & Métriques d'infrastructure -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-spacing-md bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-spacing-3xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-primary-container text-on-primary font-label-mono text-label-mono uppercase tracking-wider">Stockage Décentralisé</span>
+<div class="flex items-center gap-spacing-4xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Moteur WebP Ultra-Compress v4.2 Actif</span>
+</div>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Médiathèque Terrain &amp; Photos Chantiers</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Photothèque centrale optimisée pour les flux terrain d'Afrique centrale : encaissement direct via smartphone 4G/WhatsApp, géomarquage et compression dynamique pour un affichage instantané à Libreville comme en province.
+        </p>
+</div>
+<!-- Métriques Stockage Supabase -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-spacing-md bg-surface-container-low p-spacing-md rounded-xl">
+<div class="relative w-16 h-16 flex items-center justify-center shrink-0">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="12.8, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm text-primary">13%</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-spacing-3xs">
+<span class="font-headline-sm text-headline-sm text-primary">64.2 Go</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 500 Go alloués</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Supabase S3 Enterprise (Région Ouest-Afrique)</span>
+<span class="font-label-md text-label-md text-secondary font-semibold mt-spacing-4xs">14 280 médias archivés sans perte</span>
+</div>
+</div>
+</div>
+<!-- Zone de Dépôt Ergonomique Grande Surface -->
+<div class="group relative rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-spacing-lg shadow-sm" id="drop-zone">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-spacing-lg">
+<div class="flex items-center gap-spacing-md">
+<div class="w-16 h-16 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<div class="flex flex-col gap-spacing-4xs">
+<div class="flex items-center gap-spacing-2xs">
+<span class="font-headline-md text-headline-md text-primary">Glissez-déposez vos photos ou dossiers de chantier ici</span>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container-high font-label-mono text-label-mono text-on-surface-variant">Multi-fichiers</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Compatible transferts WhatsApp, smartphones de chantier, cartes SD et clés USB. Formats acceptés : RAW, JPG, PNG, MP4 jusqu'à 250 Mo.
+            </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-spacing-sm w-full lg:w-auto justify-end">
+<!-- Chantier Cible Dropdown -->
+<div class="flex flex-col gap-spacing-4xs w-full sm:w-64">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Attribution Chantier Cible *</label>
+<div class="relative">
+<select class="w-full h-11 px-spacing-sm pr-spacing-lg rounded bg-surface-container-lowest text-on-surface font-title-md text-title-md shadow-sm appearance-none focus:outline-none focus:bg-surface-bright">
+<option value="alenakiri">Chantier Alénakiri (Zone Portuaire)</option>
+<option value="bifoun">Axe Bifoun-Lambaréné (RN1/RN2)</option>
+<option value="ntoum">Ntoum-Cocobeach (Transgabonaise)</option>
+<option value="engins">Parc Matériel &amp; Engins Lourds</option>
+<option value="rse">Actions RSE &amp; Fondation Seydou Kane</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<button class="h-11 px-spacing-md bg-secondary-container hover:bg-secondary text-on-primary font-title-md text-title-md rounded flex items-center gap-spacing-2xs shadow-sm transition-colors mt-auto w-full sm:w-auto justify-center">
+<span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+<span>Parcourir l'appareil</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Rassurance Institutionnelle -->
+<div class="flex items-center justify-between px-spacing-md py-spacing-xs bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong>Intégrité garantie CITP :</strong> Toutes les photos sont archivées en qualité RAW/originale sur disque froid sécurisé sans risque de perte ni de compression destructrice.
+        </span>
+</div>
+<div class="hidden md:flex items-center gap-spacing-2xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Synchronisation temps réel Libreville Siège</span>
+</div>
+</div>
+<!-- Filtres & Navigation Dossiers Thématiques -->
+<div class="flex flex-col gap-spacing-sm">
+<!-- Dossiers Défilants -->
+<div class="flex items-center gap-spacing-xs overflow-x-auto pb-spacing-3xs">
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-primary text-on-primary font-title-md text-title-md flex items-center gap-spacing-2xs shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+<span>Tous les chantiers</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded bg-surface-container-high text-on-surface font-label-mono text-label-mono ml-spacing-3xs">237</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-md text-title-md flex items-center gap-spacing-2xs shrink-0 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">domain</span>
+<span>Chantier Alénakiri</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">(48)</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-md text-title-md flex items-center gap-spacing-2xs shrink-0 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">alt_route</span>
+<span>Axe Bifoun-Lambaréné</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">(72)</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-md text-title-md flex items-center gap-spacing-2xs shrink-0 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">commute</span>
+<span>Ntoum-Cocobeach</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">(35)</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-md text-title-md flex items-center gap-spacing-2xs shrink-0 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">precision_manufacturing</span>
+<span>Matériel &amp; Engins lourds</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">(28)</span>
+</button>
+<button class="px-spacing-md py-spacing-2xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-md text-title-md flex items-center gap-spacing-2xs shrink-0 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">volunteer_activism</span>
+<span>RSE &amp; Fondation Seydou Kane</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">(54)</span>
+</button>
+</div>
+<!-- Barre d'outils, tags et filtres temporels -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-spacing-sm bg-surface-container-lowest p-spacing-sm rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-spacing-xs flex-1">
+<!-- Recherche par tag -->
+<div class="relative flex-1 min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-bright" placeholder="Rechercher par tag : enrobé, dalot, pont, pose de pavés..." type="text"/>
+</div>
+<!-- Filtre Date de Prise de vue -->
+<div class="flex items-center gap-spacing-2xs bg-surface-container-low px-spacing-sm h-10 rounded">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">calendar_today</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>Toutes les dates de capture</option>
+<option>Dernières 48 heures</option>
+<option>Semaine courante (S14)</option>
+<option>Mars 2025</option>
+<option>Année 2024</option>
+</select>
+</div>
+<!-- Filtre Utilisation Site -->
+<div class="flex items-center gap-spacing-2xs bg-surface-container-low px-spacing-sm h-10 rounded">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">filter_list</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>Tous les statuts</option>
+<option>Non utilisées (prêtes pour article)</option>
+<option>Utilisées sur le site web</option>
+<option>Photos Avant/Après</option>
+</select>
+</div>
+</div>
+<!-- Mode d'affichage et Tri -->
+<div class="flex items-center gap-spacing-xs justify-end">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Afficher :</span>
+<div class="flex items-center bg-surface-container-low p-1 rounded">
+<button class="p-1 rounded bg-surface-container-lowest text-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span></button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[20px]">view_list</span></button>
+</div>
+<button class="h-10 px-spacing-sm bg-primary-container text-on-primary font-title-md text-title-md rounded flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Actualiser</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Disposition Principale : Grille Photos + Inspecteur Latéral -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-spacing-md items-start">
+<!-- Grille de médias (8 col) -->
+<div class="xl:col-span-8 flex flex-col gap-spacing-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-spacing-sm">
+<!-- Photo Card 1 (Active / Sélectionnée) -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-md transition-all duration-200 cursor-pointer flex flex-col ring-2 ring-secondary">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vue aérienne par drone d'un chantier routier CITP Gabon en plein terrassement sur l'axe Bifoun-Lambaréné. Engins niveleuses Caterpillar jaunes sur terre latérite rouge dense, canopée équatoriale verte luxuriante en bordure et ouvriers en gilets haute visibilité orange sous une lumière zénithale nette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBOwLIhj9u7RUgbhCitmtUW9m7ppbfEJMQTs5zwV96vDhIyEpUjV2OkgnRAKDf0_DmYYG5aTs6Alzt1q_Jhsw9vh4DkA363sqsZAyTihCm-q1XMnYIfIcdylqs9i2Po3dcsyYZB3Hml6gH9AvLwjnJrBMiv3D3WKXt35KGV3qC1nzkLKYicVofIFAP__m1N2bBkvzo2kOTdnt_1_WAnmDzcOaG6HWTPCzq-kes55b-WDVG7lxnsvHOOQ"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono shadow">Axe Bifoun-Lambaréné</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur text-primary font-label-mono text-label-mono font-bold">8.4 Mo ➔ 340 Ko (-96%)</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-mono text-label-mono font-bold">Utilisé (2 articles)</span>
+</div>
+<!-- Hover Overlay avec Actions Rapides -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-spacing-sm text-on-primary">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono">PK42_Nivellement_04.jpg</span>
+<button class="p-1 rounded bg-surface-container-lowest/20 hover:bg-surface-container-lowest/40 text-on-primary"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+<div class="flex flex-wrap gap-spacing-2xs justify-center">
+<button class="p-2 rounded bg-surface-container-lowest text-primary hover:bg-surface-bright shadow-sm flex items-center gap-1 font-label-md text-label-md" title="Télécharger HD">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>HD</span>
+</button>
+<button class="p-2 rounded bg-surface-container-lowest text-primary hover:bg-surface-bright shadow-sm flex items-center gap-1 font-label-md text-label-md" title="Recadrer Web 16:9">
+<span class="material-symbols-outlined text-[18px]">crop</span>
+<span>16:9</span>
+</button>
+<button class="p-2 rounded bg-secondary-container text-on-primary hover:bg-secondary shadow-sm flex items-center gap-1 font-label-md text-label-md font-bold" title="Insérer dans un article">
+<span class="material-symbols-outlined text-[18px]">post_add</span>
+<span>Insérer</span>
+</button>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-surface-container-high">
+<span>Pris le 02 Avr 2025</span>
+<span>4032 x 3024</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-sm flex flex-col gap-spacing-4xs">
+<span class="font-title-md text-title-md text-primary font-bold truncate">PK42 - Compactage Enrobé Bitumineux</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sell</span> enrobé, niveleuse, RN2</span>
+<span class="text-secondary font-semibold">WebP Prêt</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chantier maritime et portuaire d'Alénakiri au Gabon. Une grue treillis imposante bleue et blanche installant des palplanches d'acier dans l'eau de mer côtière. Ciel d'Afrique de l'ouest dégagé avec reflet du soleil sur l'estuaire du Komo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNZrOvQniu0iZNJ_hzo6CyVRZgLpF9qq4TFQZbSWzCqqsHfn_YmXHTUKTtTUybXm8SoiFJkxytTe1bUdF-52KAlFtxzbxUNOC4mY8Z8Ng_kYV44qwHVhPlaSjaIaQM03PlUltGZpYkIf1kIfD2oAt-3LNdKlIO2NsIMR5kaRMi1mvHJwZ_BxGoYM5qTcm8_UVwCghkPKVJvE-NDeD_f0E2_wdIFDZWBL71xQTFEjuTWvLSYFRsnbqD8g"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono shadow">Alénakiri</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur text-primary font-label-mono text-label-mono font-bold">12.1 Mo ➔ 420 Ko (-96.5%)</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono">Non utilisé</span>
+</div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-spacing-sm text-on-primary">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono">Palplanches_Alenakiri_09.raw</span>
+<button class="p-1 rounded bg-surface-container-lowest/20 text-on-primary"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+<div class="flex flex-wrap gap-spacing-2xs justify-center">
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">download</span>HD</button>
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">crop</span>4:3</button>
+<button class="p-2 rounded bg-secondary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">post_add</span>Insérer</button>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-surface-container-high">
+<span>Pris le 31 Mars 2025</span>
+<span>5184 x 3456</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-sm flex flex-col gap-spacing-4xs">
+<span class="font-title-md text-title-md text-primary font-bold truncate">Battage de palplanches quai lourd</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sell</span> quai, fondation, estuaire</span>
+<span class="text-secondary font-semibold">WebP Prêt</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Coulage de béton armé pour un dalot double hydraulique sur la route Ntoum-Cocobeach. Une toupie à béton déversant du béton fluide dans un coffrage métallique précis entouré de techniciens de laboratoire d'essais avec casques blancs de sécurité." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMfLLBEFHFDWuqzvFNEyuPYG5rty-x2qHQTb1MbsmNopO5ShJwoRCBC1fL3eqYKlcZt5RM2dbfI-jIwz5Ck6WGYUUU-XB3s1LDYe6O5y413NIedjnWBkT_dhY0aTJzUa1itzbIZgkfDL8RR_TEnnv98nycKXIPDVOGzCch1xty7EB2KA8wl38rF2n3r5xx3oBypEbqEMo-pTA_G3GG4foCK-PGorlBK16mGaYgEa989syWQOMNvFIPeQ"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono shadow">Ntoum-Cocobeach</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur text-primary font-label-mono text-label-mono font-bold">6.8 Mo ➔ 290 Ko (-95%)</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-mono text-label-mono font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">compare</span>
+<span>Avant / Après liée</span>
+</span>
+</div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-spacing-sm text-on-primary">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono">Dalot_PK18_Coulage.png</span>
+<button class="p-1 rounded bg-surface-container-lowest/20 text-on-primary"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+<div class="flex flex-wrap gap-spacing-2xs justify-center">
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">download</span>HD</button>
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">crop</span>16:9</button>
+<button class="p-2 rounded bg-secondary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">post_add</span>Insérer</button>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-surface-container-high">
+<span>Pris le 28 Mars 2025</span>
+<span>3840 x 2160</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-sm flex flex-col gap-spacing-4xs">
+<span class="font-title-md text-title-md text-primary font-bold truncate">Dalot double 2x2m PK18 Ouvrage d'art</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sell</span> hydraulique, dalot, béton</span>
+<span class="text-secondary font-semibold">WebP Prêt</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 4 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Parc d'engins CITP Gabon alignés avec rigueur : pelles hydrauliques Komatsu, camions bennes Mercedes Actros et compacteurs de sol sous un soleil chaud tropical avec drapeaux du Gabon et logo CITP visibles sur les portières métalliques." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5fgtpTa5aqrltF_k7qRoazo5pnpM7hMC2Zz05Rvb4okq6FmtHxkraCbj8JyDrSdyu6iS5FBvuGkbcdCzxZ21aKeyfaKtztVeanYVfX16oIhQ9JPupbtQieujxzdYdxPrPES-TT_7uz-vK6QpngmBzJBejrxwsv0Foo5iqr9qps8KNh2URQbpKOID-t0dXFTMY1OpzDVNvQyb3GDg6ePCvhmsr2shc6zPkmctvmlvd7KvTZfmcLlAVYg"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono shadow">Parc Matériel</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur text-primary font-label-mono text-label-mono font-bold">14.0 Mo ➔ 510 Ko (-96%)</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-mono text-label-mono font-bold">Utilisé (1 article)</span>
+</div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-spacing-sm text-on-primary">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono">Flotte_Engins_Base_Owendo.jpg</span>
+<button class="p-1 rounded bg-surface-container-lowest/20 text-on-primary"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+<div class="flex flex-wrap gap-spacing-2xs justify-center">
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">download</span>HD</button>
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">crop</span>16:9</button>
+<button class="p-2 rounded bg-secondary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">post_add</span>Insérer</button>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-surface-container-high">
+<span>Pris le 24 Mars 2025</span>
+<span>4608 x 2592</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-sm flex flex-col gap-spacing-4xs">
+<span class="font-title-md text-title-md text-primary font-bold truncate">Alignement Flotte Poids Lourds Base Owendo</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sell</span> flotte, bennes, logistique</span>
+<span class="text-secondary font-semibold">WebP Prêt</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 5 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cérémonie de remise de fournitures scolaires et réhabilitation d'une école primaire gabonaise par la Fondation Seydou Kane. Enfants souriants en uniformes beige et bleu, enseignants et responsables CITP en tenue d'ingénieur sous un auvent neuf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4mqH42Lm9lVS_uXY8XGeDoM-YHWAo8Yif9oTWnTOOiPnuRMX-mwfA2fsubpwSkLBCwbBZ-dGIiJNebNd8c8z8_LT8C9Y5FyUC7mM8puMcW0TROa5VEpC7z63_kRt5_l2ILcr5s1jMtnICDE2QAY_yXkF1mDFSefE1YAuybWT3i6ljsfF14gYjJs3n9pST1V3eBM645NI1d2SjoT_ipq8ZRD2tGA6b90Y_fTxZyqVBh-iyIrBK7Bf9SA"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono shadow">RSE Fondation Seydou Kane</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur text-primary font-label-mono text-label-mono font-bold">5.2 Mo ➔ 210 Ko (-96%)</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-mono text-label-mono font-bold">Utilisé (3 articles)</span>
+</div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-spacing-sm text-on-primary">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono">Fondation_SeydouKane_Ecole.jpg</span>
+<button class="p-1 rounded bg-surface-container-lowest/20 text-on-primary"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+<div class="flex flex-wrap gap-spacing-2xs justify-center">
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">download</span>HD</button>
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">crop</span>4:3</button>
+<button class="p-2 rounded bg-secondary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">post_add</span>Insérer</button>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-surface-container-high">
+<span>Pris le 19 Mars 2025</span>
+<span>3200 x 2400</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-sm flex flex-col gap-spacing-4xs">
+<span class="font-title-md text-title-md text-primary font-bold truncate">Don de manuels et réhabilitation école Bifoun</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sell</span> RSE, Seydou Kane, éducation</span>
+<span class="text-secondary font-semibold">WebP Prêt</span>
+</div>
+</div>
+</div>
+<!-- Photo Card 6 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Pose manuelle et millimétrée de pavés autobloquants haute résistance par des ouvriers gabonais formés par CITP. Aménagement urbain d'un trottoir propre à Libreville avec bordures en béton préfabriqué et signalisation routière neuve." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZQLoKeYJ7K-G5NVBz_6W4JN9ZGDVLrZFCugvYwdqRF8kJb18-A1wgHB1zKEJgz35u2a5DTqpwlNSinPF5RB0DcGtLce8T0SyvDvNsKJtijKFpBhrSdJFzhfFyGLP98lXvTz9wC_S7693cB2TzvnPUer-o2d5Xp8UbxeTivuNkRKJDOlycz8byk1vzKwCcdVkpqokxcTpKvKxdqpLuXyn80CH28w3ZnQ9nXtkn0CaxRNyVCvjGUgvamQ"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono shadow">Voirie Libreville</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur text-primary font-label-mono text-label-mono font-bold">9.1 Mo ➔ 380 Ko (-95.8%)</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono">Non utilisé</span>
+</div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-spacing-sm text-on-primary">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono">Pavage_Urbain_Libreville_02.jpg</span>
+<button class="p-1 rounded bg-surface-container-lowest/20 text-on-primary"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+<div class="flex flex-wrap gap-spacing-2xs justify-center">
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">download</span>HD</button>
+<button class="p-2 rounded bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">crop</span>16:9</button>
+<button class="p-2 rounded bg-secondary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">post_add</span>Insérer</button>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-surface-container-high">
+<span>Pris le 15 Mars 2025</span>
+<span>4200 x 2800</span>
+</div>
+</div>
+</div>
+<div class="p-spacing-sm flex flex-col gap-spacing-4xs">
+<span class="font-title-md text-title-md text-primary font-bold truncate">Pose de pavés autobloquants et bordures</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sell</span> pavés, voirie, Libreville</span>
+<span class="text-secondary font-semibold">WebP Prêt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Grille -->
+<div class="flex items-center justify-between p-spacing-sm bg-surface-container-lowest rounded-xl shadow-sm mt-spacing-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Affichage de <strong>1 à 6</strong> sur <strong>237 photographies terrain</strong></span>
+<div class="flex items-center gap-spacing-3xs">
+<button class="px-spacing-xs py-spacing-2xs rounded bg-surface-container text-on-surface-variant font-title-md text-title-md disabled:opacity-50">Précédent</button>
+<button class="w-8 h-8 rounded bg-primary text-on-primary font-label-md text-label-md">1</button>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md">2</button>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md">3</button>
+<span class="px-2 text-on-surface-variant">...</span>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md">40</button>
+<button class="px-spacing-xs py-spacing-2xs rounded bg-surface-container text-on-surface font-title-md text-title-md">Suivant</button>
+</div>
+</div>
+</div>
+<!-- Panneau Latéral d'Inspection Technique (4 col) -->
+<aside class="xl:col-span-4 bg-surface-container-lowest p-spacing-md rounded-xl shadow-md flex flex-col gap-spacing-md sticky top-20">
+<!-- En-tête Inspecteur -->
+<div class="flex items-center justify-between pb-spacing-xs bg-surface-container-low -mx-spacing-md -mt-spacing-md p-spacing-md rounded-t-xl">
+<div class="flex items-center gap-spacing-2xs">
+<span class="material-symbols-outlined text-primary text-[22px]">info</span>
+<span class="font-headline-sm text-headline-sm text-primary">Détails de l'image sélectionnée</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono">ID: #CITP-MED-8492</span>
+</div>
+<!-- Aperçu Agrandie avec zoom technique -->
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container shadow-inner group">
+<img class="w-full h-full object-cover" data-alt="Gros plan sur le compacteur de bitume CITP vibrant sur l'enrobé chaud lors des travaux de nuit de la RN2 au Gabon. Les phares de travail éclairent le macadam fumant avec une texture ultra détaillée et des graviers compressés." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx1sn40n_m29qtyHItUgmeNfav_m3xraGKdMEwrm52rc7jm0hzxliVo0Fekp-MOObEsJwS-xsFhFE199cHzZoq59WSoFMy23RWUIXCiiBUX2nJQCLNbKzUSPvB5WOKIAR84iXgdUCymQCZsw0dx-nc0Y2uqPUUpezBLuQuCEs_k8rCqCSg2SpwfFlQbtfCb9a0o6y_t-16sqEY4L9nkl6_MlGU0NiYBn6dFGxot-p43SCeZoaCz4u7Hg"/>
+<div class="absolute bottom-2 right-2 flex items-center gap-1 bg-primary/90 text-on-primary px-2 py-1 rounded font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>Chargement 0.04s en 3G</span>
+</div>
+</div>
+<!-- Métriques Comparatives & Gain Bande Passante Gabon -->
+<div class="p-spacing-sm bg-surface-container-low rounded-lg flex flex-col gap-spacing-2xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Gain Bande Passante Gabon Telecom / Airtel :</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-mono text-label-mono font-bold">-96.0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 4%"></div>
+<div class="bg-primary h-full opacity-20" style="width: 96%"></div>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>WebP généré : <strong>340 Ko</strong></span>
+<span>Stockage RAW original : <strong>8.4 Mo</strong></span>
+</div>
+</div>
+<!-- Métadonnées Techniques & Fichier -->
+<div class="flex flex-col gap-spacing-xs">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Nom de fichier système</span>
+<span class="font-title-md text-title-md text-on-surface break-all">PK42_Bifoun_Compactage_Enrobe_vFinale.jpg</span>
+</div>
+<div class="grid grid-cols-2 gap-spacing-xs">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Date de Capture</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">02 Avril 2025 • 14h22</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Dimensions &amp; Ratio</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">4032 x 3024 (4:3 natif)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Chantier rattaché</span>
+<div class="flex items-center gap-spacing-2xs mt-spacing-4xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span class="font-body-md text-body-md text-primary font-bold">Axe Routier Bifoun-Lambaréné (RN2)</span>
+</div>
+</div>
+<!-- Texte Alternatif Accessible (Alt Text) -->
+<div class="flex flex-col gap-spacing-4xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Texte Alternatif Accessibilité (IA CITP)</span>
+<span class="text-secondary text-label-mono font-label-mono flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">auto_awesome</span>Généré</span>
+</div>
+<textarea class="w-full p-spacing-xs rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright resize-none" rows="3">Travaux de compactage d'enrobé bitumineux chaud au rouleau tandem vibrant sur la RN2 près de Bifoun par les équipes de génie civil CITP Gabon.</textarea>
+</div>
+<!-- Utilisation dans les articles -->
+<div class="flex flex-col gap-spacing-4xs">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Publications associées (2)</span>
+<div class="flex flex-col gap-spacing-4xs">
+<a class="p-spacing-2xs bg-surface-container-low rounded flex items-center justify-between hover:bg-surface-container transition-colors" href="#">
+<span class="font-body-sm text-body-sm text-primary font-semibold truncate">Article: « Avancement du bitumage sur l'axe Bifoun »</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">arrow_forward</span>
+</a>
+<a class="p-spacing-2xs bg-surface-container-low rounded flex items-center justify-between hover:bg-surface-container transition-colors" href="#">
+<span class="font-body-sm text-body-sm text-primary font-semibold truncate">Fiche: « Projet de modernisation RN1 &amp; RN2 »</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Boutons d'actions d'édition -->
+<div class="flex flex-col gap-spacing-2xs pt-spacing-xs">
+<button class="w-full h-11 bg-primary text-on-primary rounded font-title-md text-title-md flex items-center justify-center gap-spacing-2xs shadow-sm hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Insérer dans l'article en cours</span>
+</button>
+<div class="grid grid-cols-2 gap-spacing-2xs">
+<button class="h-10 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded font-title-md text-title-md flex items-center justify-center gap-spacing-3xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">crop</span>
+<span>Recadrer 16:9</span>
+</button>
+<button class="h-10 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded font-title-md text-title-md flex items-center justify-center gap-spacing-3xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">link</span>
+<span>Copier URL CDN</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-spacing-2xs">
+<button class="text-error hover:bg-error-container/30 px-spacing-xs py-spacing-3xs rounded font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Supprimer le média</span>
+</button>
+<button class="text-primary hover:bg-surface-container px-spacing-xs py-spacing-3xs rounded font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Télécharger RAW (8.4 Mo)</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction simple pour la zone de dépôt drag-and-drop
+  const dropZone = document.getElementById('drop-zone');
+  if (dropZone) {
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.add('bg-surface-container-highest');
+      }, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('bg-surface-container-highest');
+      }, false);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high py-spacing-xs px-spacing-md text-on-surface-variant text-body-sm font-body-sm flex flex-wrap items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schema</span><span class="font-label-md text-label-md text-on-surface">Workflow institutionnel :</span><span class="font-body-sm text-body-sm text-on-surface-variant">Brouillon ➔ En relecture ➔ Publication officielle par un Validateur</span></div><div class="flex items-center gap-spacing-md text-body-sm font-body-sm"><span>Besoin d'aide ? Tél : <strong>+241 01 76 00 00</strong></span><span>Support DSI CITP Gabon • v2.4</span></div></footer></div></body></html>

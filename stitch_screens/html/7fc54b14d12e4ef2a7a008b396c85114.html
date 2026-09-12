@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>CITP Gabon - Back-Office Administration</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7c97ef","surface":"#faf8ff","on-primary":"#ffffff","on-tertiary-fixed":"#001e2d","primary-container":"#002b7f","on-tertiary-fixed-variant":"#004c6b","inverse-on-surface":"#eef0ff","on-primary-fixed":"#00174c","inverse-surface":"#283044","on-tertiary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","outline-variant":"#c4c6d3","on-surface-variant":"#444651","on-surface":"#131b2e","primary-fixed-dim":"#b5c4ff","on-secondary-fixed":"#2c1600","tertiary":"#002131","outline":"#747683","primary-fixed":"#dbe1ff","tertiary-container":"#00374f","secondary":"#8a5100","secondary-fixed-dim":"#ffb86e","secondary-container":"#fc9910","on-error-container":"#93000a","error":"#ba1a1a","background":"#faf8ff","surface-container-lowest":"#ffffff","on-tertiary-container":"#0ea6e3","on-error":"#ffffff","surface-tint":"#3d5aad","surface-variant":"#dae2fd","tertiary-fixed":"#c6e7ff","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","inverse-primary":"#b5c4ff","on-secondary-container":"#643900","tertiary-fixed-dim":"#81cfff","error-container":"#ffdad6","primary":"#001851","surface-container-high":"#e2e7ff","on-background":"#131b2e","on-secondary-fixed-variant":"#693c00","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#224194","secondary-fixed":"#ffdcbd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"spacing-md":"1.5rem","gutter-desktop":"1.5rem","spacing-3xs":"0.25rem","spacing-2xs":"0.5rem","spacing-lg":"2rem","spacing-3xl":"6rem","spacing-xl":"3rem","gutter-mobile":"1rem","spacing-xs":"0.75rem","spacing-sm":"1rem","spacing-4xs":"0.125rem","container-max":"1280px","spacing-2xl":"4rem"},"fontFamily":{"label-md":["Inter"],"label-mono":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"16px","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-spacing-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-spacing-xs"><img alt="citp-logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL0dcbRRgY7SsdwPT7sYO-pdOf_JRWsY9Vou8xiXpMa26-hBwXVXIR4OjvVZRyhtogBqvEWb2e0U_qUE0EvxHJMlMQ-4bC-gUmtLkQLNfrSvNJWF1RkUgQMbCuqsOi5FlkYccQESfLaWTJWUrHwifDKCHWBE__Cc5ozVEZQFc6X4qjXcDbQ3ZFjE2ZIBQ80cBwC62EdvmeyUDciUkdXVsa-jbmny9LevKs5O1oA0vg8haN7CTEppTpPyu20pq04PQUgroTWqIhnT8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CITP Gabon</span><span class="font-label-mono text-label-mono text-secondary">ESPACE ÉDITION</span></div></div></div><div class="px-spacing-md py-spacing-xs bg-surface-container-low mx-spacing-xs mt-spacing-xs rounded-xl flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span><div class="flex flex-col"><span class="font-label-mono text-label-mono text-on-surface">Éditer comme dans Word</span><span class="font-body-sm text-body-sm text-on-surface-variant">Publier en 1 clic</span></div></div><nav class="flex flex-col gap-spacing-4xs px-spacing-xs mt-spacing-sm" data-active-classes="bg-primary-container text-on-primary font-bold"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Section Principale</span><a aria-current="page" class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl transition-colors bg-primary-container text-on-primary font-bold" data-path="tableau-de-bord" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-title-md text-title-md">Tableau de bord</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mes-contenus-articles" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span class="font-title-md text-title-md">Mes Contenus &amp; Articles</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="fiches-chantiers-realisations" href="#"><span class="material-symbols-outlined text-[20px]">engineering</span><span class="font-title-md text-title-md">Fiches Chantiers &amp; Projets</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Médias &amp; Ressources</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mediatheque-terrain" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-title-md text-title-md">Médiathèque Terrain</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bannieres-alertes-info" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-md text-title-md">Bannières &amp; Alertes Info</span></a><span class="px-spacing-xs pt-spacing-sm pb-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Suivi &amp; Interactions</span><a class="flex items-center justify-between px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="boite-de-reception" href="#"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-title-md text-title-md">Boîte de réception</span></div><span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-secondary-container text-on-secondary-container font-label-mono text-label-mono">3</span></a></nav></div><div class="flex flex-col gap-spacing-4xs px-spacing-xs pb-spacing-sm pt-spacing-xs border-t border-surface-container-high"><span class="px-spacing-xs py-spacing-3xs font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">Assistance &amp; Paramètres</span><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="guide-videos-aide" href="#"><span class="material-symbols-outlined text-[20px] text-tertiary-container">help_outline</span><span class="font-title-md text-title-md">Guide &amp; Tutoriels Vidéo</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="parametres-session" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-title-md text-title-md">Paramètres de session</span></a><a class="flex items-center gap-spacing-xs px-spacing-xs py-spacing-2xs rounded-xl text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-title-md text-title-md">Déconnexion</span></a></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-spacing-md"><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-2xs bg-surface-container px-spacing-xs py-spacing-3xs rounded-xl"><span class="font-label-md text-label-md text-primary font-bold">Back-Office Édition</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-high text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-mono text-label-mono">Rôle : Éditeur (Brouillons &amp; Contenus)</span></div><div class="hidden xl:flex items-center gap-spacing-3xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-primary text-[18px]">cloud_done</span><span>Sauvegardé automatiquement (Supabase)</span></div></div><div class="flex items-center gap-spacing-sm"><div class="flex items-center gap-spacing-3xs bg-surface-container-low px-spacing-xs py-spacing-3xs rounded-xl"><button class="px-spacing-2xs py-spacing-4xs rounded-lg bg-primary-container text-on-primary font-label-mono text-label-mono">FR</button><button class="px-spacing-2xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono relative flex items-center gap-1">EN <span class="w-1.5 h-1.5 rounded-full bg-secondary-container" title="Traductions partielles"></span></button></div><a class="flex items-center gap-spacing-3xs text-primary hover:text-primary-container font-label-md text-label-md bg-surface-container px-spacing-xs py-spacing-2xs rounded-xl transition-colors" href="#" target="_blank"><span class="material-symbols-outlined text-[18px]">open_in_new</span><span class="hidden lg:inline">Voir le site public</span></a><button class="relative p-spacing-2xs rounded-xl hover:bg-surface-container-high text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-spacing-xs pl-spacing-xs border-l border-surface-container-high"><div class="flex flex-col text-right"><span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Diane M.</span><span class="font-label-mono text-label-mono text-on-surface-variant leading-tight">Chargée de Com &amp; Dir.</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full px-spacing-md py-spacing-md flex flex-col gap-spacing-lg max-w-[1400px] mx-auto">
+<!-- Top Action Bar & Institutional Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-spacing-md bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-spacing-3xs max-w-2xl">
+<div class="flex items-center gap-spacing-2xs">
+<span class="px-spacing-2xs py-spacing-4xs rounded-full bg-secondary-container/20 text-secondary font-label-mono text-label-mono uppercase tracking-wider flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+            Diffuseur d'Urgence Web
+          </span>
+<span class="text-outline-variant text-label-mono">•</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Canal Public v3.2</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Bannières &amp; Alertes Flash du Site Public</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Publiez ou modifiez les alertes de circulation, déviations de chantiers et communiqués d'urgence en 1 clic sans toucher au code.</p>
+</div>
+<!-- Live Broadcast Badge Indicator -->
+<div class="flex items-center gap-spacing-sm bg-surface-container-low p-spacing-sm rounded-xl">
+<div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-[24px]">sensors</span>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-spacing-3xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">1 Bannière active</span>
+<span class="px-spacing-3xs py-spacing-4xs rounded-lg bg-surface-variant text-on-surface-variant font-label-mono text-label-mono">100% trafic</span>
+</div>
+<span class="font-label-mono text-label-mono text-secondary">citpgabon.com • Diffusion active en direct</span>
+</div>
+</div>
+</div>
+<!-- Live Preview Simulator (Site Header Emulation) -->
+<div class="flex flex-col gap-spacing-2xs bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-spacing-xs pb-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<h2 class="font-title-md text-title-md text-primary font-bold">Aperçu en direct sur le site officiel</h2>
+<span class="px-spacing-2xs py-spacing-4xs rounded-full bg-surface-container-high font-label-mono text-label-mono text-on-surface-variant">Synchronisé instantanément</span>
+</div>
+<!-- Viewport Switcher -->
+<div class="flex items-center gap-spacing-3xs bg-surface-container-low p-spacing-4xs rounded-xl">
+<button class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-lowest shadow-sm font-label-mono text-label-mono text-primary font-bold transition-all" id="view-desktop-btn">
+<span class="material-symbols-outlined text-[16px]">desktop_windows</span>
+            Écran Ordinateur
+          </button>
+<button class="flex items-center gap-spacing-3xs px-spacing-xs py-spacing-3xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono transition-all" id="view-mobile-btn">
+<span class="material-symbols-outlined text-[16px]">smartphone</span>
+            Mobile
+          </button>
+</div>
+</div>
+<!-- Virtual Browser Chrome -->
+<div class="w-full rounded-xl bg-surface-container overflow-hidden shadow-inner transition-all duration-300" id="preview-wrapper">
+<div class="bg-inverse-surface px-spacing-sm py-spacing-2xs flex items-center justify-between text-inverse-on-surface">
+<div class="flex items-center gap-spacing-2xs">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error/80"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container/80"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant/80"></span>
+</div>
+<span class="ml-spacing-xs font-label-mono text-label-mono text-surface-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              https://www.citpgabon.com/infrastructures/alenakiri
+            </span>
+</div>
+<span class="font-label-mono text-label-mono text-surface-dim uppercase">Production Live</span>
+</div>
+<!-- SIMULATED FLASH BANNER (Reactive Target) -->
+<div class="w-full bg-secondary-container text-on-secondary-container px-spacing-md py-spacing-xs flex flex-wrap items-center justify-between gap-spacing-sm transition-colors duration-200" id="simulated-banner">
+<div class="flex items-center gap-spacing-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-on-secondary-container/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]" id="preview-icon">traffic</span>
+</div>
+<div class="flex flex-wrap items-center gap-spacing-xs min-w-0">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-on-secondary-container text-secondary-container font-label-mono text-label-mono uppercase tracking-wider" id="preview-tag">
+                Alerte Trafic &amp; Travaux
+              </span>
+<span class="font-label-md text-label-md truncate" id="preview-text">
+                Travaux de bitumage à Alénakiri (PK12) — Basculement de voie en cours. Prudence requise.
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-spacing-xs shrink-0">
+<a class="px-spacing-xs py-spacing-3xs rounded-lg bg-on-secondary-container text-secondary-container font-label-mono text-label-mono flex items-center gap-1 hover:opacity-90" href="#" id="preview-cta">
+<span>Plan de Déviation</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="text-on-secondary-container/70 hover:text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Simulated CITP Public Navbar -->
+<div class="bg-surface-container-lowest px-spacing-md py-spacing-xs flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-spacing-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm">
+              C
+            </div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">CITP Gabon S.A.</span>
+</div>
+<div class="hidden md:flex items-center gap-spacing-md font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer">Expertises BTP</span>
+<span class="hover:text-primary cursor-pointer">Grands Chantiers</span>
+<span class="hover:text-primary cursor-pointer">Parc Matériel</span>
+<span class="hover:text-primary cursor-pointer">RSE &amp; Sécurité</span>
+<span class="hover:text-primary cursor-pointer">Actualités</span>
+</div>
+<button class="px-spacing-xs py-spacing-3xs rounded-lg bg-primary text-on-primary font-label-mono text-label-mono">
+            Espace Marchés
+          </button>
+</div>
+<!-- Simulated Public Page Content Glimpse -->
+<div class="p-spacing-lg bg-surface flex flex-col gap-spacing-sm">
+<div class="h-5 w-48 bg-surface-container-highest rounded"></div>
+<div class="h-3 w-3/4 bg-surface-container-high rounded"></div>
+<div class="h-3 w-1/2 bg-surface-container-high rounded"></div>
+</div>
+</div>
+</div>
+<!-- Main Workspace Grid: Configuration vs Analytics/Quick States -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-spacing-lg items-start">
+<!-- Left Column: Active Banner Config Panel (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-spacing-lg">
+<div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm flex flex-col gap-spacing-lg">
+<!-- Master Switch & Quick Info -->
+<div class="flex flex-wrap items-center justify-between gap-spacing-sm pb-spacing-md bg-surface-container-low p-spacing-md rounded-xl">
+<div class="flex items-center gap-spacing-sm">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">toggle_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">État du Bandeau d'Alerte</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Activez ou coupez la diffusion générale sur www.citpgabon.com</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="master-toggle" type="checkbox"/>
+<div class="w-14 h-8 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-surface-container-lowest after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-secondary-container"></div>
+<span class="ml-3 font-title-md text-title-md text-primary font-bold" id="master-toggle-label">Actif sur le site</span>
+</label>
+</div>
+<!-- Alert Preset Selector -->
+<div class="flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary font-bold flex items-center gap-1.5">
+<span>Niveau de criticité &amp; Type d'alerte</span>
+<span class="text-secondary">*</span>
+</label>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Configure la palette et l'icône</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-spacing-xs" id="preset-container">
+<!-- Option 1: Trafic (Default Active) -->
+<label class="relative flex items-center gap-spacing-xs p-spacing-sm rounded-xl cursor-pointer transition-all bg-surface-container-low shadow-sm group">
+<input checked="" class="sr-only" name="alert-type" type="radio" value="traffic"/>
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">traffic</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Alerte Trafic &amp; Travaux</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Orange chantier / Déviation</span>
+</div>
+<div class="ml-auto w-4 h-4 rounded-full bg-secondary-container flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+</label>
+<!-- Option 2: Urgence Sécurité -->
+<label class="relative flex items-center gap-spacing-xs p-spacing-sm rounded-xl cursor-pointer transition-all bg-surface-container-lowest hover:bg-surface-container-low group">
+<input class="sr-only" name="alert-type" type="radio" value="emergency"/>
+<div class="w-8 h-8 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Urgence / Sécurité</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rouge sécurité / Danger</span>
+</div>
+<div class="ml-auto w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center"></div>
+</label>
+<!-- Option 3: Annonce Institutionnelle -->
+<label class="relative flex items-center gap-spacing-xs p-spacing-sm rounded-xl cursor-pointer transition-all bg-surface-container-lowest hover:bg-surface-container-low group">
+<input class="sr-only" name="alert-type" type="radio" value="official"/>
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Annonce Officielle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bleu institutionnel / Communiqué</span>
+</div>
+<div class="ml-auto w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center"></div>
+</label>
+<!-- Option 4: Succès Chantier -->
+<label class="relative flex items-center gap-spacing-xs p-spacing-sm rounded-xl cursor-pointer transition-all bg-surface-container-lowest hover:bg-surface-container-low group">
+<input class="sr-only" name="alert-type" type="radio" value="success"/>
+<div class="w-8 h-8 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Succès &amp; Réception</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cyan / Pont ouvert / Inauguration</span>
+</div>
+<div class="ml-auto w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center"></div>
+</label>
+</div>
+</div>
+<!-- Bilingual Content Section -->
+<div class="flex flex-col gap-spacing-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary font-bold">Contenu textuel du message</label>
+<!-- Language Switch Tabs -->
+<div class="flex items-center bg-surface-container p-spacing-4xs rounded-xl">
+<button class="px-spacing-xs py-spacing-4xs rounded-lg bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold shadow-sm flex items-center gap-1" id="tab-fr-btn" type="button">
+<span>FR</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</button>
+<button class="px-spacing-xs py-spacing-4xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono flex items-center gap-1" id="tab-en-btn" type="button">
+<span>EN</span>
+<span class="text-on-surface-variant text-[9px]">(Optionnel)</span>
+</button>
+</div>
+</div>
+<!-- French Text Field -->
+<div class="flex flex-col gap-spacing-3xs" id="panel-fr">
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest p-spacing-sm rounded-xl font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-bright resize-none" id="text-input-fr" placeholder="Ex: Travaux de réhabilitation du Pont d'Owendo. Déviation mise en place..." rows="3">Travaux de bitumage à Alénakiri (PK12) — Basculement de voie en cours. Prudence requise.</textarea>
+<span class="absolute bottom-2 right-3 font-label-mono text-label-mono text-on-surface-variant" id="char-count-fr">87 / 140 car.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Conseil : Privilégiez des phrases courtes et directes pour un impact maximal sur smartphone.</span>
+</div>
+<!-- English Text Field (Hidden by default) -->
+<div class="hidden flex flex-col gap-spacing-3xs" id="panel-en">
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest p-spacing-sm rounded-xl font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-bright resize-none" id="text-input-en" placeholder="Ex: Road paving in Alénakiri (PK12) — Traffic diversion in progress. Drive safely." rows="3">Road surfacing work in Alénakiri (PK12) — Traffic diversion in progress. Please drive carefully.</textarea>
+<span class="absolute bottom-2 right-3 font-label-mono text-label-mono text-on-surface-variant" id="char-count-en">92 / 140 car.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Version diffusée automatiquement pour les visiteurs anglophones et bailleurs internationaux.</span>
+</div>
+</div>
+<!-- Action Button & URL Link -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-spacing-md">
+<div class="flex flex-col gap-spacing-3xs">
+<label class="font-title-md text-title-md text-primary font-bold">Libellé du bouton d'action</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">smart_button</span>
+<input class="w-full pl-10 pr-spacing-sm py-spacing-xs rounded-xl bg-surface-container-lowest text-on-surface font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="cta-label-input" placeholder="Ex: Voir la déviation, Lire le communiqué..." type="text" value="Plan de Déviation"/>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-3xs">
+<label class="font-title-md text-title-md text-primary font-bold">Lien de destination (Interne ou Externe)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">link</span>
+<input class="w-full pl-10 pr-spacing-sm py-spacing-xs rounded-xl bg-surface-container-lowest text-on-surface font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="cta-url-input" placeholder="/projets/... ou https://..." type="text" value="/chantiers/alenakiri-pk12"/>
+</div>
+</div>
+</div>
+<!-- Scheduling Engine (Diffusion Automation) -->
+<div class="flex flex-col gap-spacing-sm bg-surface-container-low p-spacing-md rounded-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+<span class="font-title-md text-title-md text-primary font-bold">Programmation de diffusion automatique</span>
+</div>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono">Fuseau Libreville (UTC+1)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-spacing-md">
+<div class="flex flex-col gap-spacing-3xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Début d'affichage sur le site</span>
+<div class="flex items-center gap-spacing-xs">
+<input class="w-full bg-surface-container-lowest px-spacing-sm py-spacing-2xs rounded-xl text-on-surface font-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" type="date" value="2025-05-12"/>
+<input class="w-32 bg-surface-container-lowest px-spacing-sm py-spacing-2xs rounded-xl text-on-surface font-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" type="time" value="06:00"/>
+</div>
+</div>
+<div class="flex flex-col gap-spacing-3xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Fin et extinction automatique</span>
+<div class="flex items-center gap-spacing-xs">
+<input class="w-full bg-surface-container-lowest px-spacing-sm py-spacing-2xs rounded-xl text-on-surface font-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" type="date" value="2025-05-18"/>
+<input class="w-32 bg-surface-container-lowest px-spacing-sm py-spacing-2xs rounded-xl text-on-surface font-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" type="time" value="20:00"/>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La bannière s'effacera automatiquement dimanche à 20h00 sans nécessiter d'intervention humaine.</p>
+</div>
+<!-- Bottom Action Buttons: Save & Publish -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-spacing-md pt-spacing-xs">
+<div class="flex items-center gap-spacing-2xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-body-sm text-body-sm">Mise en ligne instantanée sans redémarrage serveur (Edge CDN).</span>
+</div>
+<div class="flex items-center gap-spacing-xs w-full sm:w-auto">
+<button class="px-spacing-md py-spacing-xs rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-title-md text-title-md transition-all">
+                Enregistrer le brouillon
+              </button>
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-spacing-xs px-spacing-lg py-spacing-xs rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md font-title-md text-title-md font-bold" id="publish-live-btn">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+                Mettre à jour immédiatement
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Live Analytics, Site Telemetry & Active Zone (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-spacing-lg">
+<!-- Live Coverage Card with SVG Gauges -->
+<div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm flex flex-col gap-spacing-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Diffusion en cours</span>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container-low text-secondary font-label-mono text-label-mono font-bold uppercase">Temps réel</span>
+</div>
+<div class="grid grid-cols-2 gap-spacing-sm">
+<div class="bg-surface-container-low p-spacing-sm rounded-xl flex flex-col gap-spacing-3xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Affichages H+24</span>
+<span class="font-headline-lg text-headline-lg text-primary">14.8k</span>
+<span class="font-label-md text-label-md text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +28% trafic PK12
+              </span>
+</div>
+<div class="bg-surface-container-low p-spacing-sm rounded-xl flex flex-col gap-spacing-3xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Clics Déviation</span>
+<span class="font-headline-lg text-headline-lg text-primary">3,410</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Taux d'engagement 23%</span>
+</div>
+</div>
+<!-- Mini Inline SVG Activity Chart -->
+<div class="flex flex-col gap-spacing-3xs pt-spacing-2xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-mono text-label-mono uppercase">Pics de consultation (Dernières 12h)</span>
+<span class="text-primary font-bold font-label-mono text-label-mono">Pointe : 07h30</span>
+</div>
+<div class="w-full h-20 bg-surface-container-low rounded-xl p-spacing-xs flex items-end">
+<svg class="w-full h-full text-secondary-container" fill="none" preserveaspectratio="none" viewbox="0 0 300 60">
+<path d="M0,50 L25,45 L50,48 L75,30 L100,32 L125,12 L150,22 L175,8 L200,18 L225,28 L250,15 L275,38 L300,25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<path d="M0,50 L25,45 L50,48 L75,30 L100,32 L125,12 L150,22 L175,8 L200,18 L225,28 L250,15 L275,38 L300,25 L300,60 L0,60 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-mono text-label-mono px-spacing-3xs">
+<span>00:00</span>
+<span>06:00</span>
+<span>12:00</span>
+<span>18:00</span>
+</div>
+</div>
+</div>
+<!-- Field Safety & Quick Guidelines Card -->
+<div class="bg-primary text-on-primary p-spacing-lg rounded-xl shadow-sm flex flex-col gap-spacing-sm relative overflow-hidden">
+<div class="w-32 h-32 rounded-full bg-secondary-container/10 absolute -right-8 -bottom-8 pointer-events-none"></div>
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm font-bold">Règles de Diffusion CITP</h3>
+</div>
+<p class="font-body-sm text-body-sm text-surface-variant">
+            Conformément à la convention avec le Ministère des Travaux Publics, toute modification de voie sur le tronçon PK5-PK12 doit faire l'objet d'une alerte publique au moins 24h avant l'intervention des engins.
+          </p>
+<div class="flex items-center gap-spacing-xs pt-spacing-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-mono text-label-mono text-secondary-container font-bold">Numéro Astreinte Chantier : +241 07 45 12 88</span>
+</div>
+</div>
+<!-- Realtime Server Status -->
+<div class="bg-surface-container-lowest p-spacing-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">dns</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">Supabase Realtime Engine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Délai moyen de propagation : 420 ms</span>
+</div>
+</div>
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container-high text-on-surface font-label-mono text-label-mono">OK</span>
+</div>
+</div>
+</div>
+<!-- Banner History & Archive Section -->
+<div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm flex flex-col gap-spacing-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-spacing-xs">
+<div class="flex items-center gap-spacing-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">history</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Historique des alertes passées &amp; Archives chantiers</h2>
+</div>
+<div class="flex items-center gap-spacing-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant">4 alertes archivées</span>
+<button class="px-spacing-xs py-spacing-4xs rounded-lg bg-surface-container-low text-primary font-label-mono text-label-mono hover:bg-surface-container">
+            Exporter le registre CSV
+          </button>
+</div>
+</div>
+<!-- History Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-mono text-label-mono uppercase tracking-wider">
+<th class="py-spacing-xs px-spacing-sm rounded-l-lg">Type</th>
+<th class="py-spacing-xs px-spacing-sm">Message Diffusé</th>
+<th class="py-spacing-xs px-spacing-sm">Période de Diffusion</th>
+<th class="py-spacing-xs px-spacing-sm">Auteur</th>
+<th class="py-spacing-xs px-spacing-sm">Audience</th>
+<th class="py-spacing-xs px-spacing-sm text-right rounded-r-lg">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-md text-body-md">
+<!-- Row 1: Active Alert Reference -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-secondary-container/20 text-secondary font-label-mono text-label-mono font-bold flex items-center gap-1.5 w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                  Trafic &amp; Travaux
+                </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm max-w-md">
+<span class="font-title-md text-title-md text-primary font-bold block truncate">Travaux de bitumage à Alénakiri (PK12)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Basculement de voie en cours. Prudence requise.</span>
+</td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                12 Mai - 18 Mai 2025
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-body-sm text-body-sm text-on-surface">
+                Diane M. (Com)
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-primary font-bold">
+                14.8k vues
+              </td>
+<td class="py-spacing-sm px-spacing-sm text-right whitespace-nowrap">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-container text-on-surface font-label-mono text-label-mono font-bold">En ligne</span>
+</td>
+</tr>
+<!-- Row 2: Historic Alert (Safety) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-error-container text-on-error-container font-label-mono text-label-mono font-bold flex items-center gap-1.5 w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Sécurité Pluie
+                </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm max-w-md">
+<span class="font-title-md text-title-md text-primary font-bold block truncate">Alerte Intempéries — RN1 Ntoum-Kango</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Ralentissement recommandé suite à de fortes précipitations sur la chaussée.</span>
+</td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                02 Mai - 04 Mai 2025
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-body-sm text-body-sm text-on-surface">
+                Serge N. (QHSE)
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                48.2k vues
+              </td>
+<td class="py-spacing-sm px-spacing-sm text-right whitespace-nowrap">
+<button class="px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-primary font-label-mono text-label-mono flex items-center gap-1 ml-auto transition-colors">
+<span class="material-symbols-outlined text-[14px]">replay</span>
+                  Réactiver en 1 clic
+                </button>
+</td>
+</tr>
+<!-- Row 3: Historic Alert (Success / Delivery) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-mono text-label-mono font-bold flex items-center gap-1.5 w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Livraison Ouvrage
+                </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm max-w-md">
+<span class="font-title-md text-title-md text-primary font-bold block truncate">Ouverture de la nouvelle passerelle de Glass</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Inauguration officielle ce matin en présence des autorités municipales.</span>
+</td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                18 Avr - 21 Avr 2025
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-body-sm text-body-sm text-on-surface">
+                Diane M. (Com)
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                31.0k vues
+              </td>
+<td class="py-spacing-sm px-spacing-sm text-right whitespace-nowrap">
+<button class="px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-primary font-label-mono text-label-mono flex items-center gap-1 ml-auto transition-colors">
+<span class="material-symbols-outlined text-[14px]">replay</span>
+                  Réactiver en 1 clic
+                </button>
+</td>
+</tr>
+<!-- Row 4: Historic Official -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap">
+<span class="px-spacing-2xs py-spacing-4xs rounded bg-surface-variant text-primary font-label-mono text-label-mono font-bold flex items-center gap-1.5 w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Communiqué
+                </span>
+</td>
+<td class="py-spacing-sm px-spacing-sm max-w-md">
+<span class="font-title-md text-title-md text-primary font-bold block truncate">Clôture des candidatures Appels d'offres Carrières</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Consultez les résultats de recevabilité des dossiers en ligne.</span>
+</td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                10 Mar - 15 Mar 2025
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-body-sm text-body-sm text-on-surface">
+                Marc O. (Marchés)
+              </td>
+<td class="py-spacing-sm px-spacing-sm whitespace-nowrap font-label-mono text-label-mono text-on-surface-variant">
+                19.5k vues
+              </td>
+<td class="py-spacing-sm px-spacing-sm text-right whitespace-nowrap">
+<button class="px-spacing-xs py-spacing-3xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-primary font-label-mono text-label-mono flex items-center gap-1 ml-auto transition-colors">
+<span class="material-symbols-outlined text-[14px]">replay</span>
+                  Réactiver en 1 clic
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Simulation Logic
+  const masterToggle = document.getElementById('master-toggle');
+  const masterToggleLabel = document.getElementById('master-toggle-label');
+  const simulatedBanner = document.getElementById('simulated-banner');
+  const previewText = document.getElementById('preview-text');
+  const previewTag = document.getElementById('preview-tag');
+  const previewIcon = document.getElementById('preview-icon');
+  const previewCta = document.getElementById('preview-cta');
+  const textInputFr = document.getElementById('text-input-fr');
+  const textInputEn = document.getElementById('text-input-en');
+  const charCountFr = document.getElementById('char-count-fr');
+  const charCountEn = document.getElementById('char-count-en');
+  const ctaLabelInput = document.getElementById('cta-label-input');
+  const publishBtn = document.getElementById('publish-live-btn');
+  const previewWrapper = document.getElementById('preview-wrapper');
+  const viewDesktopBtn = document.getElementById('view-desktop-btn');
+  const viewMobileBtn = document.getElementById('view-mobile-btn');
+  
+  const tabFrBtn = document.getElementById('tab-fr-btn');
+  const tabEnBtn = document.getElementById('tab-en-btn');
+  const panelFr = document.getElementById('panel-fr');
+  const panelEn = document.getElementById('panel-en');
+
+  let currentLang = 'fr';
+
+  // Toggle Visibility
+  masterToggle.addEventListener('change', (e) => {
+    if (e.target.checked) {
+      simulatedBanner.classList.remove('hidden');
+      masterToggleLabel.textContent = 'Actif sur le site';
+      masterToggleLabel.classList.remove('text-on-surface-variant');
+      masterToggleLabel.classList.add('text-primary');
+    } else {
+      simulatedBanner.classList.add('hidden');
+      masterToggleLabel.textContent = 'Désactivé (Bannière masquée)';
+      masterToggleLabel.classList.remove('text-primary');
+      masterToggleLabel.classList.add('text-on-surface-variant');
+    }
+  });
+
+  // Text sync
+  textInputFr.addEventListener('input', (e) => {
+    if (currentLang === 'fr') {
+      previewText.textContent = e.target.value;
+    }
+    charCountFr.textContent = `${e.target.value.length} / 140 car.`;
+  });
+
+  textInputEn.addEventListener('input', (e) => {
+    if (currentLang === 'en') {
+      previewText.textContent = e.target.value;
+    }
+    charCountEn.textContent = `${e.target.value.length} / 140 car.`;
+  });
+
+  // CTA Label sync
+  ctaLabelInput.addEventListener('input', (e) => {
+    previewCta.querySelector('span').textContent = e.target.value || 'En savoir plus';
+  });
+
+  // Language switcher tabs
+  tabFrBtn.addEventListener('click', () => {
+    currentLang = 'fr';
+    panelFr.classList.remove('hidden');
+    panelEn.classList.add('hidden');
+    tabFrBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    tabFrBtn.classList.remove('text-on-surface-variant');
+    tabEnBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    tabEnBtn.classList.add('text-on-surface-variant');
+    previewText.textContent = textInputFr.value;
+  });
+
+  tabEnBtn.addEventListener('click', () => {
+    currentLang = 'en';
+    panelEn.classList.remove('hidden');
+    panelFr.classList.add('hidden');
+    tabEnBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    tabEnBtn.classList.remove('text-on-surface-variant');
+    tabFrBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    tabFrBtn.classList.add('text-on-surface-variant');
+    previewText.textContent = textInputEn.value;
+  });
+
+  // Alert Type Presets Definition
+  const presets = {
+    traffic: {
+      bg: 'bg-secondary-container',
+      text: 'text-on-secondary-container',
+      tagText: 'Alerte Trafic & Travaux',
+      tagBg: 'bg-on-secondary-container text-secondary-container',
+      icon: 'traffic'
+    },
+    emergency: {
+      bg: 'bg-error',
+      text: 'text-on-error',
+      tagText: 'Urgence / Sécurité',
+      tagBg: 'bg-on-error text-error',
+      icon: 'warning'
+    },
+    official: {
+      bg: 'bg-primary-container',
+      text: 'text-on-primary',
+      tagText: 'Communiqué Officiel',
+      tagBg: 'bg-on-primary text-primary',
+      icon: 'campaign'
+    },
+    success: {
+      bg: 'bg-tertiary',
+      text: 'text-on-tertiary',
+      tagText: 'Livraison & Réception',
+      tagBg: 'bg-on-tertiary text-tertiary',
+      icon: 'task_alt'
+    }
+  };
+
+  const alertRadios = document.querySelectorAll('input[name="alert-type"]');
+  alertRadios.forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      const type = e.target.value;
+      const config = presets[type];
+
+      // Reset banner styling
+      simulatedBanner.className = `w-full px-spacing-md py-spacing-xs flex flex-wrap items-center justify-between gap-spacing-sm transition-colors duration-200 ${config.bg} ${config.text}`;
+      previewTag.className = `px-spacing-2xs py-spacing-4xs rounded font-label-mono text-label-mono uppercase tracking-wider ${config.tagBg}`;
+      previewTag.textContent = config.tagText;
+      previewIcon.textContent = config.icon;
+      previewCta.className = `px-spacing-xs py-spacing-3xs rounded-lg font-label-mono text-label-mono flex items-center gap-1 hover:opacity-90 ${config.tagBg}`;
+
+      // Update card radio UI indicators
+      document.querySelectorAll('#preset-container label').forEach(lbl => {
+        lbl.classList.remove('bg-surface-container-low', 'shadow-sm');
+        lbl.classList.add('bg-surface-container-lowest');
+        const indicator = lbl.querySelector('.w-4.h-4');
+        if (indicator) {
+          indicator.className = 'ml-auto w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center';
+          indicator.innerHTML = '';
+        }
+      });
+
+      const activeLabel = e.target.closest('label');
+      activeLabel.classList.remove('bg-surface-container-lowest');
+      activeLabel.classList.add('bg-surface-container-low', 'shadow-sm');
+      const activeIndicator = activeLabel.querySelector('.w-4.h-4');
+      if (activeIndicator) {
+        activeIndicator.className = 'ml-auto w-4 h-4 rounded-full bg-secondary-container flex items-center justify-center';
+        activeIndicator.innerHTML = '<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>';
+      }
+    });
+  });
+
+  // Responsive Viewport Switcher
+  viewDesktopBtn.addEventListener('click', () => {
+    previewWrapper.style.maxWidth = '100%';
+    previewWrapper.style.margin = '0 auto';
+    viewDesktopBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    viewDesktopBtn.classList.remove('text-on-surface-variant');
+    viewMobileBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    viewMobileBtn.classList.add('text-on-surface-variant');
+  });
+
+  viewMobileBtn.addEventListener('click', () => {
+    previewWrapper.style.maxWidth = '420px';
+    previewWrapper.style.margin = '0 auto';
+    viewMobileBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    viewMobileBtn.classList.remove('text-on-surface-variant');
+    viewDesktopBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+    viewDesktopBtn.classList.add('text-on-surface-variant');
+  });
+
+  // Instant Feedback on Publish
+  publishBtn.addEventListener('click', () => {
+    const originalText = publishBtn.innerHTML;
+    publishBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span> Diffusion en cours...';
+    publishBtn.disabled = true;
+
+    setTimeout(() => {
+      publishBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done_all</span> Mis en ligne avec succès !';
+      publishBtn.classList.remove('bg-primary-container');
+      publishBtn.classList.add('bg-tertiary-container');
+      
+      setTimeout(() => {
+        publishBtn.innerHTML = originalText;
+        publishBtn.classList.add('bg-primary-container');
+        publishBtn.classList.remove('bg-tertiary-container');
+        publishBtn.disabled = false;
+      }, 2500);
+    }, 900);
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-high py-spacing-xs px-spacing-md text-on-surface-variant text-body-sm font-body-sm flex flex-wrap items-center justify-between gap-spacing-sm"><div class="flex items-center gap-spacing-xs"><span class="material-symbols-outlined text-secondary text-[18px]">schema</span><span class="font-label-md text-label-md text-on-surface">Workflow institutionnel :</span><span class="font-body-sm text-body-sm text-on-surface-variant">Brouillon ➔ En relecture ➔ Publication officielle par un Validateur</span></div><div class="flex items-center gap-spacing-md text-body-sm font-body-sm"><span>Besoin d'aide ? Tél : <strong>+241 01 76 00 00</strong></span><span>Support DSI CITP Gabon • v2.4</span></div></footer></div></body></html>
